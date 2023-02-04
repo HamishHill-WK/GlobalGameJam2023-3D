@@ -27,13 +27,6 @@ public class TreeGrowth : MonoBehaviour
 
     private GameObject timer;
 
-    private MeshFilter meshFilter;
-    public Mesh initialMesh;
-    public Mesh sproutMesh;
-    public Mesh grownMesh;
-    public Mesh deadMesh;
-    public Mesh blankMesh;
-
     private GameObject smallTree;
     private GameObject medTree;
     private GameObject bigTree;
@@ -54,7 +47,6 @@ public class TreeGrowth : MonoBehaviour
         bigTree.SetActive(false);
 
         SetData();
-        meshFilter = this.GetComponent<MeshFilter>();
         plantPot();
     }
 
@@ -143,9 +135,7 @@ public class TreeGrowth : MonoBehaviour
 
         switch (currentGrowthStage)
         {
-            case growthStage.initial:
-                meshFilter.mesh = initialMesh;
-                break;
+            
 
             case growthStage.sprout:
                 smallTree.SetActive(false);
@@ -158,11 +148,11 @@ public class TreeGrowth : MonoBehaviour
                 break;
 
             case growthStage.dead:
-                meshFilter.mesh = deadMesh;
+                //meshFilter.mesh = deadMesh;
                 break;
 
             case growthStage.noPlant:
-                meshFilter.mesh = blankMesh;
+                //meshFilter.mesh = blankMesh;
                 break;
         }
     }
