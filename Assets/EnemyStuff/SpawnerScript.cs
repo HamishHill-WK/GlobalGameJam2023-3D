@@ -9,27 +9,32 @@ public class SpawnerScript : MonoBehaviour
     [SerializeField] private float cooldown;
     public EnemyManager enemyManager;
 
-    private bool isStopped;
-
     private void Awake()
     {
-        StartSpawning();
+
     }
      
     IEnumerator SpawnEnemy()
-    { 
-        while (!enemyManager.GetAtMax())
+    {
+        enemyManager.SetWaveState(EnemyManager.WaveState.Spawning);
+
+        while (enemyManager.GetTotalEnemiesSpawned() <= enemyManager.enemyCap)
         {
             yield return new WaitForSeconds(cooldown);
 
-            if (enemyManager.GetAtMax())
+            if (enemyManager.IsCapReached())
                 break;
 
             GameObject spawnedEnemy = Instantiate(enemyPrefab, gameObject.transform.position, Quaternion.identity);
             spawnedEnemy.GetComponent<EnemyController>().SetVariables(treeLoc.position, enemyManager);
 
             enemyManager.NewEnemy(spawnedEnemy);
+
         }
+
+        enemyManager.SetWaveState(EnemyManager.WaveState.Waiting);
+
+        yield break;
     }
 
     public void StartSpawning()
