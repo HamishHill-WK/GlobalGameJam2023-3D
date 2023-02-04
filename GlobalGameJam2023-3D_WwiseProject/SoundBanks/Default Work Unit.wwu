@@ -9,6 +9,7 @@
 						<ObjectRef Name="Play_jump_land" ID="{9C2347D4-A486-4241-B12F-E786818B10B2}" WorkUnitID="{1FD000F2-AF20-4157-AC99-E111AF6123F7}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_footstep" ID="{DC9C2A1B-FB2B-4275-828C-B954C69E3FE8}" WorkUnitID="{1FD000F2-AF20-4157-AC99-E111AF6123F7}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_digging" ID="{1B3A962E-E79E-42A0-A50A-AB3A734168D8}" WorkUnitID="{1FD000F2-AF20-4157-AC99-E111AF6123F7}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="MeowContainer" ID="{497505A4-CFBF-434E-A745-D80282A05F37}" WorkUnitID="{1FD000F2-AF20-4157-AC99-E111AF6123F7}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_menu_button1" ID="{7410AE90-1E10-4396-822B-5B5962414C0A}" WorkUnitID="{1FD000F2-AF20-4157-AC99-E111AF6123F7}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_menu_button_startgame" ID="{7A3E0C4B-4ADB-44C7-9392-CD41780B85E3}" WorkUnitID="{1FD000F2-AF20-4157-AC99-E111AF6123F7}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_meow2" ID="{33146912-8CED-44CB-8F3F-56FEB0283D2D}" WorkUnitID="{1FD000F2-AF20-4157-AC99-E111AF6123F7}" Origin="Manual" Filter="7"/>
