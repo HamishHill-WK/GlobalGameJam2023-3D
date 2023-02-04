@@ -1,6 +1,205 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{1FD000F2-AF20-4157-AC99-E111AF6123F7}" SchemaVersion="103">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{1FD000F2-AF20-4157-AC99-E111AF6123F7}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{1FD000F2-AF20-4157-AC99-E111AF6123F7}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Ambient" ID="{CBDC8F1D-50E0-4F2B-A2C1-C79FFFF74281}" ShortID="67266276">
+					<ChildrenList>
+						<Event Name="Play_ambient_birds_insects" ID="{E93BFCDE-E5EF-4A10-9FF0-63404DE1CCFE}">
+							<ChildrenList>
+								<Action Name="" ID="{A8F85793-C461-452B-A93E-694D6C934B4C}" ShortID="308029389">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ambient_birds_insects" ID="{EBEA86EB-B9D7-43BC-8F56-9AAAEE0B2615}" WorkUnitID="{EE006902-9239-48EA-BF1A-D726C8744089}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_ambient_calm" ID="{A8B3C4FE-76BF-44D0-8917-0344B0108E41}">
+							<ChildrenList>
+								<Action Name="" ID="{4E135AC2-CFCB-4400-BD5B-722B42E19E3B}" ShortID="795452693">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ambient_calm" ID="{DE2EDF54-F5BB-47F8-A187-61F26B2C4AAB}" WorkUnitID="{EE006902-9239-48EA-BF1A-D726C8744089}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_ambient_night" ID="{2D42AA7A-EABA-49BD-9B8A-E964238DE255}">
+							<ChildrenList>
+								<Action Name="" ID="{88EE0DB1-0D4D-4226-ACDC-46B919B6C9E1}" ShortID="846241620">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ambient_night" ID="{D1F46057-F46B-4000-8441-EDA6FE7402A8}" WorkUnitID="{EE006902-9239-48EA-BF1A-D726C8744089}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_ambient_windy" ID="{06F1BC39-6208-4B6E-B31F-4242B6D43BDA}">
+							<ChildrenList>
+								<Action Name="" ID="{1552A135-FB03-46A3-8EB1-56CB63AF2E1F}" ShortID="1060408039">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ambient_windy" ID="{C11120AD-BE9C-456B-B393-87BDC92CC595}" WorkUnitID="{EE006902-9239-48EA-BF1A-D726C8744089}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Digging" ID="{9AF6CB18-FA85-4F66-A197-6C32695AF1EC}" ShortID="128487834">
+					<ChildrenList>
+						<Event Name="Play_digging" ID="{1B3A962E-E79E-42A0-A50A-AB3A734168D8}">
+							<ChildrenList>
+								<Action Name="" ID="{2CC14EFC-CD48-44B1-8374-83ECCE4B4C59}" ShortID="35902058">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="digging" ID="{B63EDE23-70E9-421F-8318-6BFEEB3072B0}" WorkUnitID="{EE006902-9239-48EA-BF1A-D726C8744089}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_digging_reverb" ID="{96D4934D-9FD4-451C-B599-A95F03F73459}">
+							<ChildrenList>
+								<Action Name="" ID="{90A02B60-729F-4ABB-A6D6-AE9484D80A2C}" ShortID="94166225">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="digging_reverb" ID="{5B6E36C6-45B3-468D-91B2-E3F08A371D27}" WorkUnitID="{EE006902-9239-48EA-BF1A-D726C8744089}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="CatSounds" ID="{5FD63EE7-997D-400A-9BA2-E6ED57BC3B0B}" ShortID="936321404">
+					<ChildrenList>
+						<Event Name="Play_purr_loopable" ID="{D7FA7774-3C39-4215-AF11-81ECFCD567FD}">
+							<ChildrenList>
+								<Action Name="" ID="{690EB585-27B8-4D73-B3B3-37206984F1CD}" ShortID="533654353">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="purr_loopable" ID="{B127F33F-854E-4D86-B905-64C0C3C0B683}" WorkUnitID="{EE006902-9239-48EA-BF1A-D726C8744089}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_meow1" ID="{A5428907-1CD7-4A48-AC3A-5AEEF90500D2}">
+							<ChildrenList>
+								<Action Name="" ID="{0D5F7949-28EA-4F00-B2B4-0493793D2557}" ShortID="176653150">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="meow1" ID="{688BD1D6-C247-42F4-B2BE-26425E78F871}" WorkUnitID="{EE006902-9239-48EA-BF1A-D726C8744089}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_meow2" ID="{33146912-8CED-44CB-8F3F-56FEB0283D2D}">
+							<ChildrenList>
+								<Action Name="" ID="{ACC0C80D-05D6-4978-8AF9-79813869E643}" ShortID="460309448">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="meow2" ID="{024D90F9-CED2-4630-A984-9CA799DF04B0}" WorkUnitID="{EE006902-9239-48EA-BF1A-D726C8744089}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Jumping" ID="{81C24751-805C-4C49-AC38-1137647C796B}" ShortID="766106747">
+					<ChildrenList>
+						<Event Name="Play_jump_up" ID="{130FD122-1083-4E55-AABF-E40A6EF5970A}">
+							<ChildrenList>
+								<Action Name="" ID="{9D77562D-CBF8-4029-809A-74C66D34F2F3}" ShortID="421465440">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="jump_up" ID="{6C6EE66E-C453-439C-B9D9-A5A64293D00D}" WorkUnitID="{EE006902-9239-48EA-BF1A-D726C8744089}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_jump_land" ID="{9C2347D4-A486-4241-B12F-E786818B10B2}">
+							<ChildrenList>
+								<Action Name="" ID="{CAA65BFB-22D7-4CF2-9D57-601DD93037D9}" ShortID="98533636">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="jump_land" ID="{D3B42F2A-296C-4A97-800C-FD034FD10D6B}" WorkUnitID="{EE006902-9239-48EA-BF1A-D726C8744089}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_jump_land_purr" ID="{C733A0D0-6D36-4F68-912C-238B4A345DA5}">
+							<ChildrenList>
+								<Action Name="" ID="{28C512A3-9E74-428F-9629-5D5026C181B5}" ShortID="658024527">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="jump_land_purr" ID="{70D16D43-CB45-4A76-8D0B-2F0F1DBC48C2}" WorkUnitID="{EE006902-9239-48EA-BF1A-D726C8744089}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="UI" ID="{2837062F-1A40-4AAF-88D8-7A2DCC23EB24}" ShortID="615434359">
+					<ChildrenList>
+						<Event Name="Play_menu_button2" ID="{80399A2D-5D07-4D60-B8AE-EC622723D6DB}">
+							<ChildrenList>
+								<Action Name="" ID="{5251A33B-574B-42B7-8EBF-502BD656270D}" ShortID="29672001">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="menu_button2" ID="{F6E4C739-5F68-4DDA-BAA5-5E56D9DAEBB5}" WorkUnitID="{EE006902-9239-48EA-BF1A-D726C8744089}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_menu_button1" ID="{7410AE90-1E10-4396-822B-5B5962414C0A}">
+							<ChildrenList>
+								<Action Name="" ID="{BA928A87-A3A3-4653-9255-8CECE26F2F5E}" ShortID="380800195">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="menu_button1" ID="{19DF77D7-AD6D-472E-B3AB-5D0D591EB6ED}" WorkUnitID="{EE006902-9239-48EA-BF1A-D726C8744089}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_menu_button_startgame" ID="{7A3E0C4B-4ADB-44C7-9392-CD41780B85E3}">
+							<ChildrenList>
+								<Action Name="" ID="{0D6320BB-C6E6-441E-85EC-17C5AFED7DAD}" ShortID="219253489">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="menu_button_startgame" ID="{D5804754-1B93-4C0C-836F-EB8EFF82395B}" WorkUnitID="{EE006902-9239-48EA-BF1A-D726C8744089}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Event Name="Play_footstep" ID="{DC9C2A1B-FB2B-4275-828C-B954C69E3FE8}">
+					<ChildrenList>
+						<Action Name="" ID="{4F530C05-E345-42EB-A722-3849629BD7D9}" ShortID="715669177">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="footstep" ID="{2509EC85-F7A3-4344-8250-ED82E86103EC}" WorkUnitID="{EE006902-9239-48EA-BF1A-D726C8744089}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

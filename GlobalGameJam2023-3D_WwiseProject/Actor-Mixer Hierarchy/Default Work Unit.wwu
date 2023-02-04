@@ -1,6 +1,454 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{EE006902-9239-48EA-BF1A-D726C8744089}" SchemaVersion="103">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{EE006902-9239-48EA-BF1A-D726C8744089}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{EE006902-9239-48EA-BF1A-D726C8744089}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="CatSounds" ID="{4EA59096-A739-495B-A7E8-054863687D74}" ShortID="445292295">
+					<ChildrenList>
+						<Sound Name="purr_loopable" ID="{B127F33F-854E-4D86-B905-64C0C3C0B683}" ShortID="525506782">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD69D4FD-D202-437C-89A7-2FA33DC2543D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4A9965A4-A5FB-4CF9-8E18-B607C02C7674}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="purr_loopable" ID="{2E357A79-9613-44CF-B61C-EA4575C3774A}">
+									<Language>SFX</Language>
+									<AudioFile>purr_loopable.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="291559207"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="purr_loopable" ID="{2E357A79-9613-44CF-B61C-EA4575C3774A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="meow1" ID="{688BD1D6-C247-42F4-B2BE-26425E78F871}" ShortID="494385474">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD69D4FD-D202-437C-89A7-2FA33DC2543D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4A9965A4-A5FB-4CF9-8E18-B607C02C7674}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="meow1" ID="{BD1878F4-6187-41BC-86EC-2768BE81C999}">
+									<Language>SFX</Language>
+									<AudioFile>meow1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="653328147"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="meow1" ID="{BD1878F4-6187-41BC-86EC-2768BE81C999}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="meow2" ID="{024D90F9-CED2-4630-A984-9CA799DF04B0}" ShortID="510742422">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD69D4FD-D202-437C-89A7-2FA33DC2543D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4A9965A4-A5FB-4CF9-8E18-B607C02C7674}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="meow2" ID="{055FCB15-34DC-4690-AD42-723A335392D0}">
+									<Language>SFX</Language>
+									<AudioFile>meow2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="648578355"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="meow2" ID="{055FCB15-34DC-4690-AD42-723A335392D0}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Digging" ID="{5A3238AC-57CB-49FD-83A1-5CA0FBED645A}" ShortID="374112422">
+					<ChildrenList>
+						<Sound Name="digging_reverb" ID="{5B6E36C6-45B3-468D-91B2-E3F08A371D27}" ShortID="639666565">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD69D4FD-D202-437C-89A7-2FA33DC2543D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4A9965A4-A5FB-4CF9-8E18-B607C02C7674}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="digging_reverb" ID="{A5F09C45-BE01-4019-A2E9-B5761D2BEEB8}">
+									<Language>SFX</Language>
+									<AudioFile>digging_reverb.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="563728923"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="digging_reverb" ID="{A5F09C45-BE01-4019-A2E9-B5761D2BEEB8}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="digging" ID="{B63EDE23-70E9-421F-8318-6BFEEB3072B0}" ShortID="774659">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD69D4FD-D202-437C-89A7-2FA33DC2543D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4A9965A4-A5FB-4CF9-8E18-B607C02C7674}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="digging" ID="{65CE34BA-7829-461E-B8F6-D469E51F03D0}">
+									<Language>SFX</Language>
+									<AudioFile>digging.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="646617067"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="digging" ID="{65CE34BA-7829-461E-B8F6-D469E51F03D0}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="UI" ID="{E7DDDD07-0F68-47D4-967E-084E143581A4}" ShortID="233721762">
+					<ChildrenList>
+						<Sound Name="menu_button2" ID="{F6E4C739-5F68-4DDA-BAA5-5E56D9DAEBB5}" ShortID="713304493">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD69D4FD-D202-437C-89A7-2FA33DC2543D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4A9965A4-A5FB-4CF9-8E18-B607C02C7674}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="menu_button2" ID="{C7796DA5-80E8-4D0F-93AE-D149084B1114}">
+									<Language>SFX</Language>
+									<AudioFile>menu_button2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="870132491"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="menu_button2" ID="{C7796DA5-80E8-4D0F-93AE-D149084B1114}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="menu_button_startgame" ID="{D5804754-1B93-4C0C-836F-EB8EFF82395B}" ShortID="580265652">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD69D4FD-D202-437C-89A7-2FA33DC2543D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4A9965A4-A5FB-4CF9-8E18-B607C02C7674}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="menu_button_startgame" ID="{25A7BC45-BACF-438E-87D0-9EE65509F4E8}">
+									<Language>SFX</Language>
+									<AudioFile>menu_button_startgame.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="964463698"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="menu_button_startgame" ID="{25A7BC45-BACF-438E-87D0-9EE65509F4E8}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="menu_button1" ID="{19DF77D7-AD6D-472E-B3AB-5D0D591EB6ED}" ShortID="274425359">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD69D4FD-D202-437C-89A7-2FA33DC2543D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4A9965A4-A5FB-4CF9-8E18-B607C02C7674}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="menu_button1" ID="{5CD2B4B5-56DB-4447-9871-34A5E29E208F}">
+									<Language>SFX</Language>
+									<AudioFile>menu_button1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1017080012"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="menu_button1" ID="{5CD2B4B5-56DB-4447-9871-34A5E29E208F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="PickUp" ID="{225BAC97-D339-4AD4-9348-396B17D73EE6}" ShortID="853517020">
+					<ChildrenList>
+						<Sound Name="water_pickup" ID="{A107CCF0-9C43-4A6E-AC8D-8C331063EE06}" ShortID="346512471">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD69D4FD-D202-437C-89A7-2FA33DC2543D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4A9965A4-A5FB-4CF9-8E18-B607C02C7674}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="water_pickup" ID="{455AED16-6AFD-41F1-8EC3-CA36EFD2C529}">
+									<Language>SFX</Language>
+									<AudioFile>water_pickup.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="698497341"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="water_pickup" ID="{455AED16-6AFD-41F1-8EC3-CA36EFD2C529}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="pickup" ID="{3F142350-54C0-4ADD-BFA6-E4EB629187BB}" ShortID="362001889">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD69D4FD-D202-437C-89A7-2FA33DC2543D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4A9965A4-A5FB-4CF9-8E18-B607C02C7674}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="pickup" ID="{8EFDB0EE-3ACB-4521-B873-AEF4F27E51A2}">
+									<Language>SFX</Language>
+									<AudioFile>pickup.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="981276294"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="pickup" ID="{8EFDB0EE-3ACB-4521-B873-AEF4F27E51A2}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Jumping" ID="{491E88CF-41B7-492D-A345-EF09C4FD9FEB}" ShortID="216354802">
+					<ChildrenList>
+						<Sound Name="jump_up" ID="{6C6EE66E-C453-439C-B9D9-A5A64293D00D}" ShortID="302843557">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD69D4FD-D202-437C-89A7-2FA33DC2543D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4A9965A4-A5FB-4CF9-8E18-B607C02C7674}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="jump_up" ID="{D4E2E8D8-4073-4D93-AF10-0A02E4D90E9B}">
+									<Language>SFX</Language>
+									<AudioFile>jump_up.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="962828443"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="jump_up" ID="{D4E2E8D8-4073-4D93-AF10-0A02E4D90E9B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="jump_land" ID="{D3B42F2A-296C-4A97-800C-FD034FD10D6B}" ShortID="621820305">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD69D4FD-D202-437C-89A7-2FA33DC2543D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4A9965A4-A5FB-4CF9-8E18-B607C02C7674}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="jump_land" ID="{ED19FF31-C041-4605-9653-DB4783D8F354}">
+									<Language>SFX</Language>
+									<AudioFile>jump_land.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="913344849"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="jump_land" ID="{ED19FF31-C041-4605-9653-DB4783D8F354}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="jump_land_purr" ID="{70D16D43-CB45-4A76-8D0B-2F0F1DBC48C2}" ShortID="973051731">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD69D4FD-D202-437C-89A7-2FA33DC2543D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4A9965A4-A5FB-4CF9-8E18-B607C02C7674}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="jump_land_purr" ID="{B30C4730-D746-42B0-8740-D3503ECB470F}">
+									<Language>SFX</Language>
+									<AudioFile>jump_land_purr.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="697584758"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="jump_land_purr" ID="{B30C4730-D746-42B0-8740-D3503ECB470F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Footsteps" ID="{927DC498-C609-4C2A-8257-5CB4ABA1F66C}" ShortID="726872094">
+					<ChildrenList>
+						<Sound Name="footstep" ID="{2509EC85-F7A3-4344-8250-ED82E86103EC}" ShortID="451318334">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD69D4FD-D202-437C-89A7-2FA33DC2543D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4A9965A4-A5FB-4CF9-8E18-B607C02C7674}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="footstep" ID="{CC0A93A7-5797-46D1-ACE1-1BDF52A31172}">
+									<Language>SFX</Language>
+									<AudioFile>footstep.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="413065541"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="footstep" ID="{CC0A93A7-5797-46D1-ACE1-1BDF52A31172}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Ambient" ID="{587AF031-42BC-43DB-8560-AD1A8F233BA4}" ShortID="926510379">
+					<ChildrenList>
+						<Sound Name="ambient_calm" ID="{DE2EDF54-F5BB-47F8-A187-61F26B2C4AAB}" ShortID="381188758">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD69D4FD-D202-437C-89A7-2FA33DC2543D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4A9965A4-A5FB-4CF9-8E18-B607C02C7674}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ambient_calm" ID="{F3136672-E60F-4B32-88BB-535AF604D8D7}">
+									<Language>SFX</Language>
+									<AudioFile>ambient_calm.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="34370976"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="ambient_calm" ID="{F3136672-E60F-4B32-88BB-535AF604D8D7}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="ambient_birds_insects" ID="{EBEA86EB-B9D7-43BC-8F56-9AAAEE0B2615}" ShortID="1021823275">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD69D4FD-D202-437C-89A7-2FA33DC2543D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4A9965A4-A5FB-4CF9-8E18-B607C02C7674}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ambient_birds_insects" ID="{0618DE78-F286-4357-AE92-F4215409305C}">
+									<Language>SFX</Language>
+									<AudioFile>ambient_birds_insects.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1039984839"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="ambient_birds_insects" ID="{0618DE78-F286-4357-AE92-F4215409305C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="ambient_night" ID="{D1F46057-F46B-4000-8441-EDA6FE7402A8}" ShortID="24706642">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD69D4FD-D202-437C-89A7-2FA33DC2543D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4A9965A4-A5FB-4CF9-8E18-B607C02C7674}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ambient_night" ID="{81988934-AD26-4FEF-8F1E-8931AC32AE6D}">
+									<Language>SFX</Language>
+									<AudioFile>ambient_night.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1015891"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="ambient_night" ID="{81988934-AD26-4FEF-8F1E-8931AC32AE6D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="ambient_windy" ID="{C11120AD-BE9C-456B-B393-87BDC92CC595}" ShortID="796540352">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD69D4FD-D202-437C-89A7-2FA33DC2543D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4A9965A4-A5FB-4CF9-8E18-B607C02C7674}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ambient_windy" ID="{12223884-A872-46F0-B4C8-F1A89315EC8E}">
+									<Language>SFX</Language>
+									<AudioFile>ambient_windy.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="120477436"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="ambient_windy" ID="{12223884-A872-46F0-B4C8-F1A89315EC8E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>

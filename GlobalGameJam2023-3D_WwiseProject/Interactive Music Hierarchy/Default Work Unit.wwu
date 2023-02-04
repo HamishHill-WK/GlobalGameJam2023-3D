@@ -1,6 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{67AFFCE5-84F6-4668-96B1-063DD726A333}" SchemaVersion="103">
 	<InteractiveMusic>
-		<WorkUnit Name="Default Work Unit" ID="{67AFFCE5-84F6-4668-96B1-063DD726A333}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{67AFFCE5-84F6-4668-96B1-063DD726A333}" PersistMode="Standalone">
+			<ChildrenList>
+				<MusicSegment Name="gamejamsong1" ID="{1AB3517C-5568-436D-82F3-4284DF9A34F5}" ShortID="299586168">
+					<PropertyList>
+						<Property Name="EndPosition" Type="Real64" Value="192000"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD69D4FD-D202-437C-89A7-2FA33DC2543D}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4A9965A4-A5FB-4CF9-8E18-B607C02C7674}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicTrack Name="gamejamsong1" ID="{85617747-4E22-48F1-A621-8BA5B8A09F20}" ShortID="962684080">
+							<ReferenceList>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4A9965A4-A5FB-4CF9-8E18-B607C02C7674}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="gamejamsong1" ID="{596D4AC5-83F1-40E2-8832-04A5C5D77DDE}">
+									<Language>SFX</Language>
+									<AudioFile>gamejamsong1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="134254866"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{1526EDB9-7D89-4595-ABC7-783D31537A5A}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<ObjectLists>
+								<ObjectList Name="Sequences">
+									<Reference>
+										<Local>
+											<MusicTrackSequence Name="" ID="{8CA08624-7D53-40F4-9A4C-5FDC3A1E1060}">
+												<ObjectLists>
+													<ObjectList Name="Clips">
+														<Reference>
+															<Local>
+																<MusicClip Name="gamejamsong1" ID="{4F83AB52-43FF-40A8-B16C-E016598FE2DD}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="192000"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="gamejamsong1" ID="{596D4AC5-83F1-40E2-8832-04A5C5D77DDE}"/>
+																</MusicClip>
+															</Local>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MusicTrackSequence>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicTrack>
+					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="Cues">
+							<Reference>
+								<Local>
+									<MusicCue Name="Entry Cue" ID="{2E94B7AC-5DB4-4015-AAF8-01A2FBCC8A53}"/>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MusicCue Name="Exit Cue" ID="{D1BB711B-6586-41F8-911F-638B56C6AD66}">
+										<PropertyList>
+											<Property Name="CueType" Type="int16" Value="1"/>
+											<Property Name="TimeMs" Type="Real64" Value="192000"/>
+										</PropertyList>
+									</MusicCue>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</MusicSegment>
+			</ChildrenList>
+		</WorkUnit>
 	</InteractiveMusic>
 </WwiseDocument>
