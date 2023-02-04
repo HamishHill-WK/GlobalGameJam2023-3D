@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class EnemyManager : MonoBehaviour
 {
+    [SerializeField] private int enemyCap = 5;
+
+
     private List<EnemyController> activeEnemies = new List<EnemyController>();
 
-    private float totalEnemies = 0;
+    private bool atMax = false;
 
     // Start is called before the first frame update
     void Start()
@@ -29,12 +32,26 @@ public class EnemyManager : MonoBehaviour
                 }
             }
         }
+
+
+        if (atMax && activeEnemies.Count < enemyCap)
+        {
+            atMax = false;
+
+            foreach (SpawnerScript tempThing in FindObjectsOfType<SpawnerScript>())
+            {
+                tempThing.StartSpawning();
+            }
+        }
     }
 
     public void NewEnemy(GameObject enem)
     {
         EnemyController temp = enem.GetComponent<EnemyController>();
         activeEnemies.Add(temp);
+
+        if (activeEnemies.Count == enemyCap)
+            atMax = true;
     }
 
     public void RemoveEnemy(GameObject enem)
@@ -46,5 +63,10 @@ public class EnemyManager : MonoBehaviour
     public int GetTotalActiveEnems()
     {
         return activeEnemies.Count;
+    }
+
+    public bool GetAtMax()
+    {
+        return atMax;
     }
 }
