@@ -16,15 +16,14 @@ public class timeTracking : MonoBehaviour
         public int hour;
     }
 
-    public Text txt;
+    public Text SpeedText;
+    public Text txt;    //legacy text ui element
     private int year = 0;
     private int day = 0;
     private int hour = 0;
-    private int minute = 0; // time minutes counts up every frame. 
-    public int speedFactor = 1; 
-                //^^^
-    //the rate at which time passes.
-    //Scale goes from 1 to 10.
+    private float minute = 0; // time minutes counts up every frame. 
+    public float speedFactor = 1;//the rate at which time passes. Scale goes from 1 to 10.
+    private GameObject Slider;
 
     enum month { January = 0, February, March, April, May, June, July, August, September, October, November, December };
     month currentMonth = month.January;
@@ -32,50 +31,29 @@ public class timeTracking : MonoBehaviour
     public timeData getCurrentTime()
     {
         timeData timeData1;
-
         timeData1.year = year;
         timeData1.monthNum = (int)currentMonth;
         timeData1.day = day;
         timeData1.hour = hour;
-
         return timeData1;
     }
 
     void updateText()
     {
+        SpeedText.text = "Speed: " + speedFactor;
         timeData timeData2 = getCurrentTime();
         txt.text = "Day: " + timeData2.day.ToString() +  " Month: " + currentMonth.ToString() + " Year: " + timeData2.year.ToString() ;
     }
 
-    public void setRateSlow()
+    public void updateSpeed()
     {
-        speedFactor = 1;
-    }    
-    
-    public void setRateMed()
-    {
-        speedFactor = 5;
-    }    
-    
-    public void setRateFast()
-    {
-        speedFactor = 10;
+        speedFactor = Slider.GetComponent<Slider>().value;
     }
 
-    public void setRateZero()
+    private void Start()
     {
-        speedFactor = 0;
-    }
-
-    void Start()
-    {
-        //PlayerData data = new PlayerData(null, null, this);  //load time data from binary file and update variables 
-
-        //year = data.currentYear;
-        //currentMonth = (month)data.currentMonth;
-        //day = data.day;
-        //hour = data.hour;
-
+        Slider = GameObject.Find("TimeSlider");
+        speedFactor = Slider.GetComponent<Slider>().value;
     }
 
     void Update()
@@ -84,55 +62,53 @@ public class timeTracking : MonoBehaviour
 
         minute += speedFactor;
 
-        if(minute >= 10)
-        {
+        if(minute >= 10){
             hour++;
             minute = 0;
         }
 
-        if(hour == 6)
-        {
+        if(hour == 6){
             day++;
             hour = 0;
         }
                 
-        if (currentMonth == month.February)
-        {
-            if (day >= 28)
-            {
-                currentMonth++;
-                day = 0;
-            }
+        if (currentMonth == month.February && day >= 28){
+            updateMonth();
+            return;
         }
 
         if (currentMonth != month.February)
         {
             if (day >= 30)
             {
-                if (currentMonth == month.April || currentMonth == month.June || currentMonth == month.September || currentMonth == month.November)
-                {
-                    currentMonth++;
-                    day = 0;
-                }
-
+                if (currentMonth == month.April || currentMonth == month.June 
+                    || currentMonth == month.September || currentMonth == month.November)
+                    updateMonth();
+                
                 if (day == 31)
                 {
                     if( currentMonth == month.December)
                     {
-                        currentMonth = 0;
                         year++;
+                        currentMonth = 0;
                         day = 0;
                         return;
                     }
 
-                    if (currentMonth == month.January || currentMonth == month.March || currentMonth == month.May || currentMonth == month.July 
-                        || currentMonth == month.August || currentMonth == month.October )
+                    if (currentMonth == month.January || currentMonth == month.March || currentMonth == month.May 
+                        || currentMonth == month.July || currentMonth == month.August || currentMonth == month.October )
                     {
-                        currentMonth++;
-                        day = 0;
+                        updateMonth();
                     }
                 }
             }
         }
     }
+
+    private void updateMonth()
+    {
+        currentMonth++;
+        day = 0;
+    }
 }
+
