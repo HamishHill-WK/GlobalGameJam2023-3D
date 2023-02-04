@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: f200d01f20af5741ac99e111af6123f7
     GuidInternal: 
-    m_lastTime: -8585260719933409142
+    m_lastTime: -8585260605511269140
     List:
     - name: Ambient
       guid: 1d8fdccbe0502b4fa2c1c79ffff74281
@@ -300,7 +300,7 @@ MonoBehaviour:
       Path: Events\Default Work Unit\Play_footstep
       maxAttenuation: 0
       maxDuration: 0.378095
-      minDuration: 0.378095
+      minDuration: 0.119093
     - name: Play_gamejamsong1
       guid: 9179e7d2b5ef3c4ab9309551a4c0430f
       id: 861759052
@@ -589,7 +589,7 @@ MonoBehaviour:
     m_lastTime: -8585261402741384355
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 0500000006000000070000001100000012000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
