@@ -24,19 +24,13 @@ public class SpawnerScript : MonoBehaviour
 
             if (enemyManager.GetAtMax())
                 break;
+
             GameObject spawnedEnemy = Instantiate(enemyPrefab, gameObject.transform.position, Quaternion.identity);
-            enemyManager.NewEnemy(spawnedEnemy);
             spawnedEnemy.GetComponent<EnemyController>().SetVariables(treeLoc.position, enemyManager);
 
-            if (enemyManager.GetAtMax())
-                isStopped = true;
+            enemyManager.NewEnemy(spawnedEnemy);
         }
     }
-
-    private void Update()
-    {
-    }
-
 
     public void StartSpawning()
     {
