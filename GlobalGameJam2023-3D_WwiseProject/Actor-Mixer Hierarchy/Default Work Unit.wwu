@@ -6,6 +6,9 @@
 				<Folder Name="CatSounds" ID="{4EA59096-A739-495B-A7E8-054863687D74}" ShortID="445292295">
 					<ChildrenList>
 						<Sound Name="purr_loopable" ID="{B127F33F-854E-4D86-B905-64C0C3C0B683}" ShortID="525506782">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD69D4FD-D202-437C-89A7-2FA33DC2543D}"/>
@@ -322,7 +325,129 @@
 						</Sound>
 					</ChildrenList>
 				</Folder>
-				<Folder Name="Footsteps" ID="{927DC498-C609-4C2A-8257-5CB4ABA1F66C}" ShortID="726872094"/>
+				<Folder Name="Footsteps" ID="{927DC498-C609-4C2A-8257-5CB4ABA1F66C}" ShortID="726872094">
+					<ChildrenList>
+						<Sound Name="footstep" ID="{2509EC85-F7A3-4344-8250-ED82E86103EC}" ShortID="451318334">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD69D4FD-D202-437C-89A7-2FA33DC2543D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4A9965A4-A5FB-4CF9-8E18-B607C02C7674}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="footstep" ID="{CC0A93A7-5797-46D1-ACE1-1BDF52A31172}">
+									<Language>SFX</Language>
+									<AudioFile>footstep.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="413065541"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="footstep" ID="{CC0A93A7-5797-46D1-ACE1-1BDF52A31172}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Ambient" ID="{587AF031-42BC-43DB-8560-AD1A8F233BA4}" ShortID="926510379">
+					<ChildrenList>
+						<Sound Name="ambient_calm" ID="{DE2EDF54-F5BB-47F8-A187-61F26B2C4AAB}" ShortID="381188758">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD69D4FD-D202-437C-89A7-2FA33DC2543D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4A9965A4-A5FB-4CF9-8E18-B607C02C7674}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ambient_calm" ID="{F3136672-E60F-4B32-88BB-535AF604D8D7}">
+									<Language>SFX</Language>
+									<AudioFile>ambient_calm.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="34370976"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="ambient_calm" ID="{F3136672-E60F-4B32-88BB-535AF604D8D7}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="ambient_birds_insects" ID="{EBEA86EB-B9D7-43BC-8F56-9AAAEE0B2615}" ShortID="1021823275">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD69D4FD-D202-437C-89A7-2FA33DC2543D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4A9965A4-A5FB-4CF9-8E18-B607C02C7674}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ambient_birds_insects" ID="{0618DE78-F286-4357-AE92-F4215409305C}">
+									<Language>SFX</Language>
+									<AudioFile>ambient_birds_insects.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1039984839"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="ambient_birds_insects" ID="{0618DE78-F286-4357-AE92-F4215409305C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="ambient_night" ID="{D1F46057-F46B-4000-8441-EDA6FE7402A8}" ShortID="24706642">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD69D4FD-D202-437C-89A7-2FA33DC2543D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4A9965A4-A5FB-4CF9-8E18-B607C02C7674}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ambient_night" ID="{81988934-AD26-4FEF-8F1E-8931AC32AE6D}">
+									<Language>SFX</Language>
+									<AudioFile>ambient_night.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1015891"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="ambient_night" ID="{81988934-AD26-4FEF-8F1E-8931AC32AE6D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="ambient_windy" ID="{C11120AD-BE9C-456B-B393-87BDC92CC595}" ShortID="796540352">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD69D4FD-D202-437C-89A7-2FA33DC2543D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4A9965A4-A5FB-4CF9-8E18-B607C02C7674}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ambient_windy" ID="{12223884-A872-46F0-B4C8-F1A89315EC8E}">
+									<Language>SFX</Language>
+									<AudioFile>ambient_windy.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="120477436"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="ambient_windy" ID="{12223884-A872-46F0-B4C8-F1A89315EC8E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

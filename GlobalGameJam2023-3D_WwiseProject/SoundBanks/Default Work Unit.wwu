@@ -4,7 +4,24 @@
 		<WorkUnit Name="Default Work Unit" ID="{D2FF7200-5A7B-4184-A48F-41B127AC628F}" PersistMode="Standalone">
 			<ChildrenList>
 				<SoundBank Name="SoundBank" ID="{1BCD861C-4CC5-4CF3-ABAF-6C8AE930DA7F}">
-					<ObjectInclusionList/>
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_purr_loopable" ID="{D7FA7774-3C39-4215-AF11-81ECFCD567FD}" WorkUnitID="{1FD000F2-AF20-4157-AC99-E111AF6123F7}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_jump_land" ID="{9C2347D4-A486-4241-B12F-E786818B10B2}" WorkUnitID="{1FD000F2-AF20-4157-AC99-E111AF6123F7}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_footstep" ID="{DC9C2A1B-FB2B-4275-828C-B954C69E3FE8}" WorkUnitID="{1FD000F2-AF20-4157-AC99-E111AF6123F7}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_digging" ID="{1B3A962E-E79E-42A0-A50A-AB3A734168D8}" WorkUnitID="{1FD000F2-AF20-4157-AC99-E111AF6123F7}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_menu_button1" ID="{7410AE90-1E10-4396-822B-5B5962414C0A}" WorkUnitID="{1FD000F2-AF20-4157-AC99-E111AF6123F7}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_menu_button_startgame" ID="{7A3E0C4B-4ADB-44C7-9392-CD41780B85E3}" WorkUnitID="{1FD000F2-AF20-4157-AC99-E111AF6123F7}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_meow2" ID="{33146912-8CED-44CB-8F3F-56FEB0283D2D}" WorkUnitID="{1FD000F2-AF20-4157-AC99-E111AF6123F7}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_ambient_calm" ID="{A8B3C4FE-76BF-44D0-8917-0344B0108E41}" WorkUnitID="{1FD000F2-AF20-4157-AC99-E111AF6123F7}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_digging_reverb" ID="{96D4934D-9FD4-451C-B599-A95F03F73459}" WorkUnitID="{1FD000F2-AF20-4157-AC99-E111AF6123F7}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_ambient_night" ID="{2D42AA7A-EABA-49BD-9B8A-E964238DE255}" WorkUnitID="{1FD000F2-AF20-4157-AC99-E111AF6123F7}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_ambient_birds_insects" ID="{E93BFCDE-E5EF-4A10-9FF0-63404DE1CCFE}" WorkUnitID="{1FD000F2-AF20-4157-AC99-E111AF6123F7}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_meow1" ID="{A5428907-1CD7-4A48-AC3A-5AEEF90500D2}" WorkUnitID="{1FD000F2-AF20-4157-AC99-E111AF6123F7}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_ambient_windy" ID="{06F1BC39-6208-4B6E-B31F-4242B6D43BDA}" WorkUnitID="{1FD000F2-AF20-4157-AC99-E111AF6123F7}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_menu_button2" ID="{80399A2D-5D07-4D60-B8AE-EC622723D6DB}" WorkUnitID="{1FD000F2-AF20-4157-AC99-E111AF6123F7}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_jump_up" ID="{130FD122-1083-4E55-AABF-E40A6EF5970A}" WorkUnitID="{1FD000F2-AF20-4157-AC99-E111AF6123F7}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_jump_land_purr" ID="{C733A0D0-6D36-4F68-912C-238B4A345DA5}" WorkUnitID="{1FD000F2-AF20-4157-AC99-E111AF6123F7}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>

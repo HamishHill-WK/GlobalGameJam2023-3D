@@ -66,8 +66,22 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 0072ffd27b5a8441a48f41b127ac628f
     GuidInternal: 
-    m_lastTime: -8585261402741414350
-    List: []
+    m_lastTime: -8585260821887522535
+    List:
+    - name: SoundBank
+      guid: 1c86cd1bc54cf34cabaf6c8ae930da7f
+      id: 1661994096
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0072ffd27b5a8441a48f41b127ac628f
+      - ElementName: SoundBank
+        ObjectType: 7
+        guid: 1c86cd1bc54cf34cabaf6c8ae930da7f
+      Path: SoundBanks\Default Work Unit\SoundBank
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
@@ -80,8 +94,410 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: f200d01f20af5741ac99e111af6123f7
     GuidInternal: 
-    m_lastTime: -8585261402741574349
-    List: []
+    m_lastTime: -8585260821887765111
+    List:
+    - name: Ambient
+      guid: 1d8fdccbe0502b4fa2c1c79ffff74281
+      id: 77978275
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f200d01f20af5741ac99e111af6123f7
+      - ElementName: Ambient
+        ObjectType: 4
+        guid: 1d8fdccbe0502b4fa2c1c79ffff74281
+      Path: Events\Default Work Unit\Ambient
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: CatSounds
+      guid: e73ed65f7d990a409ba2e6ed57bc3b0b
+      id: 4256019115
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f200d01f20af5741ac99e111af6123f7
+      - ElementName: CatSounds
+        ObjectType: 4
+        guid: e73ed65f7d990a409ba2e6ed57bc3b0b
+      Path: Events\Default Work Unit\CatSounds
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Digging
+      guid: 18cbf69a85fa664fa1976c32695af1ec
+      id: 3747392166
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f200d01f20af5741ac99e111af6123f7
+      - ElementName: Digging
+        ObjectType: 4
+        guid: 18cbf69a85fa664fa1976c32695af1ec
+      Path: Events\Default Work Unit\Digging
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Jumping
+      guid: 5147c2815c80494cac381137647c796b
+      id: 68157183
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f200d01f20af5741ac99e111af6123f7
+      - ElementName: Jumping
+        ObjectType: 4
+        guid: 5147c2815c80494cac381137647c796b
+      Path: Events\Default Work Unit\Jumping
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_ambient_birds_insects
+      guid: defc3be9efe5104a9ff063404de1ccfe
+      id: 1748835869
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f200d01f20af5741ac99e111af6123f7
+      - ElementName: Ambient
+        ObjectType: 4
+        guid: 1d8fdccbe0502b4fa2c1c79ffff74281
+      - ElementName: Play_ambient_birds_insects
+        ObjectType: 3
+        guid: defc3be9efe5104a9ff063404de1ccfe
+      Path: Events\Default Work Unit\Ambient\Play_ambient_birds_insects
+      maxAttenuation: 0
+      maxDuration: 51.692314
+      minDuration: 51.692314
+    - name: Play_ambient_calm
+      guid: fec4b3a8bf76d04489170344b0108e41
+      id: 3522202468
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f200d01f20af5741ac99e111af6123f7
+      - ElementName: Ambient
+        ObjectType: 4
+        guid: 1d8fdccbe0502b4fa2c1c79ffff74281
+      - ElementName: Play_ambient_calm
+        ObjectType: 3
+        guid: fec4b3a8bf76d04489170344b0108e41
+      Path: Events\Default Work Unit\Ambient\Play_ambient_calm
+      maxAttenuation: 0
+      maxDuration: 51.692314
+      minDuration: 51.692314
+    - name: Play_ambient_night
+      guid: 7aaa422dbaeabd499b8ae964238de255
+      id: 894712109
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f200d01f20af5741ac99e111af6123f7
+      - ElementName: Ambient
+        ObjectType: 4
+        guid: 1d8fdccbe0502b4fa2c1c79ffff74281
+      - ElementName: Play_ambient_night
+        ObjectType: 3
+        guid: 7aaa422dbaeabd499b8ae964238de255
+      Path: Events\Default Work Unit\Ambient\Play_ambient_night
+      maxAttenuation: 0
+      maxDuration: 51.692314
+      minDuration: 51.692314
+    - name: Play_ambient_windy
+      guid: 39bcf10608626e4bb31f4242b6d43bda
+      id: 1791777216
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f200d01f20af5741ac99e111af6123f7
+      - ElementName: Ambient
+        ObjectType: 4
+        guid: 1d8fdccbe0502b4fa2c1c79ffff74281
+      - ElementName: Play_ambient_windy
+        ObjectType: 3
+        guid: 39bcf10608626e4bb31f4242b6d43bda
+      Path: Events\Default Work Unit\Ambient\Play_ambient_windy
+      maxAttenuation: 0
+      maxDuration: 51.692314
+      minDuration: 51.692314
+    - name: Play_digging
+      guid: 2e963a1b9ee7a042a50aab3a734168d8
+      id: 813141615
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f200d01f20af5741ac99e111af6123f7
+      - ElementName: Digging
+        ObjectType: 4
+        guid: 18cbf69a85fa664fa1976c32695af1ec
+      - ElementName: Play_digging
+        ObjectType: 3
+        guid: 2e963a1b9ee7a042a50aab3a734168d8
+      Path: Events\Default Work Unit\Digging\Play_digging
+      maxAttenuation: 0
+      maxDuration: 1.116077
+      minDuration: 1.116077
+    - name: Play_digging_reverb
+      guid: 4d93d496d49f1c45b599a95f03f73459
+      id: 2589767054
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f200d01f20af5741ac99e111af6123f7
+      - ElementName: Digging
+        ObjectType: 4
+        guid: 18cbf69a85fa664fa1976c32695af1ec
+      - ElementName: Play_digging_reverb
+        ObjectType: 3
+        guid: 4d93d496d49f1c45b599a95f03f73459
+      Path: Events\Default Work Unit\Digging\Play_digging_reverb
+      maxAttenuation: 0
+      maxDuration: 1.714286
+      minDuration: 1.714286
+    - name: Play_footstep
+      guid: 1b2a9cdc2bfb7542828cb954c69e3fe8
+      id: 1602358412
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f200d01f20af5741ac99e111af6123f7
+      - ElementName: Play_footstep
+        ObjectType: 3
+        guid: 1b2a9cdc2bfb7542828cb954c69e3fe8
+      Path: Events\Default Work Unit\Play_footstep
+      maxAttenuation: 0
+      maxDuration: 0.378095
+      minDuration: 0.378095
+    - name: Play_jump_land
+      guid: d447239c86a44142b12fe786818b10b2
+      id: 3297008698
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f200d01f20af5741ac99e111af6123f7
+      - ElementName: Jumping
+        ObjectType: 4
+        guid: 5147c2815c80494cac381137647c796b
+      - ElementName: Play_jump_land
+        ObjectType: 3
+        guid: d447239c86a44142b12fe786818b10b2
+      Path: Events\Default Work Unit\Jumping\Play_jump_land
+      maxAttenuation: 0
+      maxDuration: 1.281247
+      minDuration: 1.281247
+    - name: Play_jump_land_purr
+      guid: d0a033c7366d684f912c238b4a345da5
+      id: 119879040
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f200d01f20af5741ac99e111af6123f7
+      - ElementName: Jumping
+        ObjectType: 4
+        guid: 5147c2815c80494cac381137647c796b
+      - ElementName: Play_jump_land_purr
+        ObjectType: 3
+        guid: d0a033c7366d684f912c238b4a345da5
+      Path: Events\Default Work Unit\Jumping\Play_jump_land_purr
+      maxAttenuation: 0
+      maxDuration: 1.281247
+      minDuration: 1.281247
+    - name: Play_jump_up
+      guid: 22d10f138310554eaabfe40a6ef5970a
+      id: 2372486210
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f200d01f20af5741ac99e111af6123f7
+      - ElementName: Jumping
+        ObjectType: 4
+        guid: 5147c2815c80494cac381137647c796b
+      - ElementName: Play_jump_up
+        ObjectType: 3
+        guid: 22d10f138310554eaabfe40a6ef5970a
+      Path: Events\Default Work Unit\Jumping\Play_jump_up
+      maxAttenuation: 0
+      maxDuration: 0.705351
+      minDuration: 0.705351
+    - name: Play_menu_button_startgame
+      guid: 4b0c3e7adb4ac7449392cd41780b85e3
+      id: 1758056349
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f200d01f20af5741ac99e111af6123f7
+      - ElementName: UI
+        ObjectType: 4
+        guid: 2f063728401aaf4a88d87a2dcc23eb24
+      - ElementName: Play_menu_button_startgame
+        ObjectType: 3
+        guid: 4b0c3e7adb4ac7449392cd41780b85e3
+      Path: Events\Default Work Unit\UI\Play_menu_button_startgame
+      maxAttenuation: 0
+      maxDuration: 3.428571
+      minDuration: 3.428571
+    - name: Play_menu_button1
+      guid: 90ae1074101e9643822b5b5962414c0a
+      id: 2656319675
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f200d01f20af5741ac99e111af6123f7
+      - ElementName: UI
+        ObjectType: 4
+        guid: 2f063728401aaf4a88d87a2dcc23eb24
+      - ElementName: Play_menu_button1
+        ObjectType: 3
+        guid: 90ae1074101e9643822b5b5962414c0a
+      Path: Events\Default Work Unit\UI\Play_menu_button1
+      maxAttenuation: 0
+      maxDuration: 1.714286
+      minDuration: 1.714286
+    - name: Play_menu_button2
+      guid: 2d9a3980075d604db8aeec622723d6db
+      id: 2656319672
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f200d01f20af5741ac99e111af6123f7
+      - ElementName: UI
+        ObjectType: 4
+        guid: 2f063728401aaf4a88d87a2dcc23eb24
+      - ElementName: Play_menu_button2
+        ObjectType: 3
+        guid: 2d9a3980075d604db8aeec622723d6db
+      Path: Events\Default Work Unit\UI\Play_menu_button2
+      maxAttenuation: 0
+      maxDuration: 1.714286
+      minDuration: 1.714286
+    - name: Play_meow1
+      guid: 078942a5d71c484aac3a5aeef90500d2
+      id: 3565569787
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f200d01f20af5741ac99e111af6123f7
+      - ElementName: CatSounds
+        ObjectType: 4
+        guid: e73ed65f7d990a409ba2e6ed57bc3b0b
+      - ElementName: Play_meow1
+        ObjectType: 3
+        guid: 078942a5d71c484aac3a5aeef90500d2
+      Path: Events\Default Work Unit\CatSounds\Play_meow1
+      maxAttenuation: 0
+      maxDuration: 0.705351
+      minDuration: 0.705351
+    - name: Play_meow2
+      guid: 12691433ed8ccb448f3f56feb0283d2d
+      id: 3565569784
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f200d01f20af5741ac99e111af6123f7
+      - ElementName: CatSounds
+        ObjectType: 4
+        guid: e73ed65f7d990a409ba2e6ed57bc3b0b
+      - ElementName: Play_meow2
+        ObjectType: 3
+        guid: 12691433ed8ccb448f3f56feb0283d2d
+      Path: Events\Default Work Unit\CatSounds\Play_meow2
+      maxAttenuation: 0
+      maxDuration: 0.705351
+      minDuration: 0.705351
+    - name: Play_purr_loopable
+      guid: 7477fad7393c1542af1181ecfcd567fd
+      id: 477141860
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f200d01f20af5741ac99e111af6123f7
+      - ElementName: CatSounds
+        ObjectType: 4
+        guid: e73ed65f7d990a409ba2e6ed57bc3b0b
+      - ElementName: Play_purr_loopable
+        ObjectType: 3
+        guid: 7477fad7393c1542af1181ecfcd567fd
+      Path: Events\Default Work Unit\CatSounds\Play_purr_loopable
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: UI
+      guid: 2f063728401aaf4a88d87a2dcc23eb24
+      id: 1551306167
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f200d01f20af5741ac99e111af6123f7
+      - ElementName: UI
+        ObjectType: 4
+        guid: 2f063728401aaf4a88d87a2dcc23eb24
+      Path: Events\Default Work Unit\UI
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -139,7 +555,7 @@ MonoBehaviour:
     m_lastTime: -8585261402741384355
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 090000000a000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

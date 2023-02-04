@@ -3,6 +3,16 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{38BE497A-E08D-4947-8B48-3D1E7953ADE7}">
 			<PropertyList>
+				<Property Name="Event Action List\{130FD122-1083-4E55-AABF-E40A6EF5970A}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{1B3A962E-E79E-42A0-A50A-AB3A734168D8}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{33146912-8CED-44CB-8F3F-56FEB0283D2D}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{7410AE90-1E10-4396-822B-5B5962414C0A}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{96D4934D-9FD4-451C-B599-A95F03F73459}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{A5428907-1CD7-4A48-AC3A-5AEEF90500D2}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{C733A0D0-6D36-4F68-912C-238B4A345DA5}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{D7FA7774-3C39-4215-AF11-81ECFCD567FD}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{DC9C2A1B-FB2B-4275-828C-B954C69E3FE8}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{E93BFCDE-E5EF-4A10-9FF0-63404DE1CCFE}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
 					<ValueList>
@@ -19,6 +29,9 @@
 				<Property Name="Game Profiler\Voice Monitor\LastBus" Type="string" Value="{00000000-0000-0000-0000-000000000000}"/>
 				<Property Name="General\LatestLanguage" Type="int32" Value="684519430"/>
 				<Property Name="General\LatestPlatform" Type="string" Value="Mac"/>
+				<Property Name="GenerateSoundBanks\x64_SelectedLanguages" Type="string" Value=""/>
+				<Property Name="GenerateSoundBanks\x64_SelectedPlatforms" Type="string" Value=""/>
+				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value="HIbNG8VM80yrr2yK6TDafw=="/>
 				<Property Name="HardwareController\CurrentSession" Type="string" Value="{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}"/>
 				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups" Type="string" Value="8vuNG7RqIEy/zEMsTgbWSgEr1Jf/////UkZX+7beTUGwwJPibBApnQEr1Jf/////"/>
 				<Property Name="MeterView\LastObject1" Type="string" Value="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>

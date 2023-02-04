@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>C:\Abertay\GGJ\GlobalGameJam2023-3D\GlobalGameJam2023-3D_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Abertay\GGJ\GlobalGameJam2023-3D\GlobalGameJam2023-3D_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Abertay\GGJ\GlobalGameJam2023-3D\GlobalGameJam2023-3D_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Abertay\GGJ\GlobalGameJam2023-3D\GlobalGameJam2023-3D_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX" Hash="2754342975">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="1661994096" Language="SFX" Hash="2910122176">
+			<ObjectPath>\SoundBanks\Default Work Unit\SoundBank</ObjectPath>
+			<ShortName>SoundBank</ShortName>
+			<Path>SoundBank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1748835869" Name="Play_ambient_birds_insects" ObjectPath="\Events\Default Work Unit\Ambient\Play_ambient_birds_insects" DurationType="OneShot" DurationMin="51.692314" DurationMax="51.692314">
+					<IncludedMemoryFiles>
+						<File Id="1039984839" Language="SFX">
+							<ShortName>ambient_birds_insects.wav</ShortName>
+							<Path>SFX\ambient_birds_insects_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3522202468" Name="Play_ambient_calm" ObjectPath="\Events\Default Work Unit\Ambient\Play_ambient_calm" DurationType="OneShot" DurationMin="51.692314" DurationMax="51.692314">
+					<IncludedMemoryFiles>
+						<File Id="34370976" Language="SFX">
+							<ShortName>ambient_calm.wav</ShortName>
+							<Path>SFX\ambient_calm_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="894712109" Name="Play_ambient_night" ObjectPath="\Events\Default Work Unit\Ambient\Play_ambient_night" DurationType="OneShot" DurationMin="51.692314" DurationMax="51.692314">
+					<IncludedMemoryFiles>
+						<File Id="1015891" Language="SFX">
+							<ShortName>ambient_night.wav</ShortName>
+							<Path>SFX\ambient_night_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1791777216" Name="Play_ambient_windy" ObjectPath="\Events\Default Work Unit\Ambient\Play_ambient_windy" DurationType="OneShot" DurationMin="51.692314" DurationMax="51.692314">
+					<IncludedMemoryFiles>
+						<File Id="120477436" Language="SFX">
+							<ShortName>ambient_windy.wav</ShortName>
+							<Path>SFX\ambient_windy_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="813141615" Name="Play_digging" ObjectPath="\Events\Default Work Unit\Digging\Play_digging" DurationType="OneShot" DurationMin="1.116077" DurationMax="1.116077">
+					<IncludedMemoryFiles>
+						<File Id="646617067" Language="SFX">
+							<ShortName>digging.wav</ShortName>
+							<Path>SFX\digging_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2589767054" Name="Play_digging_reverb" ObjectPath="\Events\Default Work Unit\Digging\Play_digging_reverb" DurationType="OneShot" DurationMin="1.714286" DurationMax="1.714286">
+					<IncludedMemoryFiles>
+						<File Id="563728923" Language="SFX">
+							<ShortName>digging_reverb.wav</ShortName>
+							<Path>SFX\digging_reverb_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1602358412" Name="Play_footstep" ObjectPath="\Events\Default Work Unit\Play_footstep" DurationType="OneShot" DurationMin="0.378095" DurationMax="0.378095">
+					<IncludedMemoryFiles>
+						<File Id="413065541" Language="SFX">
+							<ShortName>footstep.wav</ShortName>
+							<Path>SFX\footstep_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3297008698" Name="Play_jump_land" ObjectPath="\Events\Default Work Unit\Jumping\Play_jump_land" DurationType="OneShot" DurationMin="1.281247" DurationMax="1.281247">
+					<IncludedMemoryFiles>
+						<File Id="913344849" Language="SFX">
+							<ShortName>jump_land.wav</ShortName>
+							<Path>SFX\jump_land_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="119879040" Name="Play_jump_land_purr" ObjectPath="\Events\Default Work Unit\Jumping\Play_jump_land_purr" DurationType="OneShot" DurationMin="1.281247" DurationMax="1.281247">
+					<IncludedMemoryFiles>
+						<File Id="697584758" Language="SFX">
+							<ShortName>jump_land_purr.wav</ShortName>
+							<Path>SFX\jump_land_purr_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2372486210" Name="Play_jump_up" ObjectPath="\Events\Default Work Unit\Jumping\Play_jump_up" DurationType="OneShot" DurationMin="0.705351" DurationMax="0.705351">
+					<IncludedMemoryFiles>
+						<File Id="962828443" Language="SFX">
+							<ShortName>jump_up.wav</ShortName>
+							<Path>SFX\jump_up_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2656319675" Name="Play_menu_button1" ObjectPath="\Events\Default Work Unit\UI\Play_menu_button1" DurationType="OneShot" DurationMin="1.714286" DurationMax="1.714286">
+					<IncludedMemoryFiles>
+						<File Id="1017080012" Language="SFX">
+							<ShortName>menu_button1.wav</ShortName>
+							<Path>SFX\menu_button1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2656319672" Name="Play_menu_button2" ObjectPath="\Events\Default Work Unit\UI\Play_menu_button2" DurationType="OneShot" DurationMin="1.714286" DurationMax="1.714286">
+					<IncludedMemoryFiles>
+						<File Id="870132491" Language="SFX">
+							<ShortName>menu_button2.wav</ShortName>
+							<Path>SFX\menu_button2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1758056349" Name="Play_menu_button_startgame" ObjectPath="\Events\Default Work Unit\UI\Play_menu_button_startgame" DurationType="OneShot" DurationMin="3.428571" DurationMax="3.428571">
+					<IncludedMemoryFiles>
+						<File Id="964463698" Language="SFX">
+							<ShortName>menu_button_startgame.wav</ShortName>
+							<Path>SFX\menu_button_startgame_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3565569787" Name="Play_meow1" ObjectPath="\Events\Default Work Unit\CatSounds\Play_meow1" DurationType="OneShot" DurationMin="0.705351" DurationMax="0.705351">
+					<IncludedMemoryFiles>
+						<File Id="653328147" Language="SFX">
+							<ShortName>meow1.wav</ShortName>
+							<Path>SFX\meow1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3565569784" Name="Play_meow2" ObjectPath="\Events\Default Work Unit\CatSounds\Play_meow2" DurationType="OneShot" DurationMin="0.705351" DurationMax="0.705351">
+					<IncludedMemoryFiles>
+						<File Id="648578355" Language="SFX">
+							<ShortName>meow2.wav</ShortName>
+							<Path>SFX\meow2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="477141860" Name="Play_purr_loopable" ObjectPath="\Events\Default Work Unit\CatSounds\Play_purr_loopable" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="291559207" Language="SFX">
+							<ShortName>purr_loopable.wav</ShortName>
+							<Path>SFX\purr_loopable_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
