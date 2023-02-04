@@ -2,12 +2,14 @@ Event	ID	Name			Wwise Object Path	Notes
 	119879040	Play_jump_land_purr			\Default Work Unit\Jumping\Play_jump_land_purr	
 	477141860	Play_purr_loopable			\Default Work Unit\CatSounds\Play_purr_loopable	
 	813141615	Play_digging			\Default Work Unit\Digging\Play_digging	
+	861759052	Play_gamejamsong1			\Default Work Unit\Play_gamejamsong1	
 	894712109	Play_ambient_night			\Default Work Unit\Ambient\Play_ambient_night	
 	1602358412	Play_footstep			\Default Work Unit\Play_footstep	
 	1748835869	Play_ambient_birds_insects			\Default Work Unit\Ambient\Play_ambient_birds_insects	
 	1758056349	Play_menu_button_startgame			\Default Work Unit\UI\Play_menu_button_startgame	
 	1791777216	Play_ambient_windy			\Default Work Unit\Ambient\Play_ambient_windy	
 	2372486210	Play_jump_up			\Default Work Unit\Jumping\Play_jump_up	
+	2478467693	Play_gamejamsong2_battlemusic			\Default Work Unit\Play_gamejamsong2_battlemusic	
 	2589767054	Play_digging_reverb			\Default Work Unit\Digging\Play_digging_reverb	
 	2656319672	Play_menu_button2			\Default Work Unit\UI\Play_menu_button2	
 	2656319675	Play_menu_button1			\Default Work Unit\UI\Play_menu_button1	
@@ -19,7 +21,9 @@ Event	ID	Name			Wwise Object Path	Notes
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	1015891	ambient_night	C:\Abertay\GGJ\GlobalGameJam2023-3D\GlobalGameJam2023-3D_WwiseProject\.cache\Windows\SFX\ambient_night_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambient\ambient_night		4559390
 	34370976	ambient_calm	C:\Abertay\GGJ\GlobalGameJam2023-3D\GlobalGameJam2023-3D_WwiseProject\.cache\Windows\SFX\ambient_calm_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambient\ambient_calm		4559390
+	102198125	gamejamsong2_battlemusic	C:\Abertay\GGJ\GlobalGameJam2023-3D\GlobalGameJam2023-3D_WwiseProject\.cache\Windows\SFX\gamejamsong2_battlemusic_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\gamejamsong2_battlemusic\gamejamsong2_battlemusic		25643648
 	120477436	ambient_windy	C:\Abertay\GGJ\GlobalGameJam2023-3D\GlobalGameJam2023-3D_WwiseProject\.cache\Windows\SFX\ambient_windy_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambient\ambient_windy		4559390
+	134254866	gamejamsong1	C:\Abertay\GGJ\GlobalGameJam2023-3D\GlobalGameJam2023-3D_WwiseProject\.cache\Windows\SFX\gamejamsong1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\gamejamsong1\gamejamsong1		33868928
 	291559207	purr_loopable	C:\Abertay\GGJ\GlobalGameJam2023-3D\GlobalGameJam2023-3D_WwiseProject\.cache\Windows\SFX\purr_loopable_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\CatSounds\purr_loopable		219052
 	413065541	footstep	C:\Abertay\GGJ\GlobalGameJam2023-3D\GlobalGameJam2023-3D_WwiseProject\.cache\Windows\SFX\footstep_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\footstep		66824
 	563728923	digging_reverb	C:\Abertay\GGJ\GlobalGameJam2023-3D\GlobalGameJam2023-3D_WwiseProject\.cache\Windows\SFX\digging_reverb_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Digging\digging_reverb		302528
