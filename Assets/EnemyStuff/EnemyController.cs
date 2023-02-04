@@ -7,15 +7,18 @@ using UnityEngine.AI;
 public class EnemyController : MonoBehaviour
 {
 
-    public NavMeshAgent agent;
+    [SerializeField] private NavMeshAgent agent;
 
-    public GameObject treeLocation;
+    //private void Start()
+    //{
+    //    agent.SetDestination(treeLocation.transform.position);
 
-    private void Start()
-    {
-        agent.SetDestination(treeLocation.transform.position);
-    }
+    //}
 
+    //private void Awake()
+    //{
+
+    //}
     // Update is called once per frame
     void Update()
     {
@@ -28,5 +31,10 @@ public class EnemyController : MonoBehaviour
                 agent.SetDestination(hitInfo.point);
             }
         }
+    }
+
+    public void MoveToTree(Vector3 treePos)
+    {
+        agent.SetDestination(treePos);
     }
 }
