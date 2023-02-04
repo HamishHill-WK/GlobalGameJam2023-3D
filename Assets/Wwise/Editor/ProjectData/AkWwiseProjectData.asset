@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 14799b86ef4c8a49af6d8580bd25f4fd
     GuidInternal: 
-    m_lastTime: -8585260914010404597
+    m_lastTime: -8585261402741250667
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: a465994afba5f94c8e18b607c02c7674
     GuidInternal: 
-    m_lastTime: -8585260914010493064
+    m_lastTime: -8585261402741494365
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 0072ffd27b5a8441a48f41b127ac628f
     GuidInternal: 
-    m_lastTime: -8585260745322303397
+    m_lastTime: -8585260719901298567
     List:
     - name: SoundBank
       guid: 1c86cd1bc54cf34cabaf6c8ae930da7f
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: f200d01f20af5741ac99e111af6123f7
     GuidInternal: 
-    m_lastTime: -8585260745333003195
+    m_lastTime: -8585260605511269140
     List:
     - name: Ambient
       guid: 1d8fdccbe0502b4fa2c1c79ffff74281
@@ -300,7 +300,41 @@ MonoBehaviour:
       Path: Events\Default Work Unit\Play_footstep
       maxAttenuation: 0
       maxDuration: 0.378095
-      minDuration: 0.378095
+      minDuration: 0.119093
+    - name: Play_gamejamsong1
+      guid: 9179e7d2b5ef3c4ab9309551a4c0430f
+      id: 861759052
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f200d01f20af5741ac99e111af6123f7
+      - ElementName: Play_gamejamsong1
+        ObjectType: 3
+        guid: 9179e7d2b5ef3c4ab9309551a4c0430f
+      Path: Events\Default Work Unit\Play_gamejamsong1
+      maxAttenuation: 0
+      maxDuration: 192
+      minDuration: 192
+    - name: Play_gamejamsong2_battlemusic
+      guid: 9fab17bb003b234a9b6df40aea294a1f
+      id: 2478467693
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f200d01f20af5741ac99e111af6123f7
+      - ElementName: Play_gamejamsong2_battlemusic
+        ObjectType: 3
+        guid: 9fab17bb003b234a9b6df40aea294a1f
+      Path: Events\Default Work Unit\Play_gamejamsong2_battlemusic
+      maxAttenuation: 0
+      maxDuration: 145.37143
+      minDuration: 145.37143
     - name: Play_jump_land
       guid: d447239c86a44142b12fe786818b10b2
       id: 3297008698
@@ -510,7 +544,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 665bcfb24699914ba8302a73666e1f40
     GuidInternal: 
-    m_lastTime: -8585260914010532779
+    m_lastTime: -8585261402741564344
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -524,7 +558,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 2b7132bbc2afd1438811a5445faa7cf7
     GuidInternal: 
-    m_lastTime: -8585260914010414581
+    m_lastTime: -8585261402741394351
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -538,7 +572,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: a7b7890ac19bd94b9afbe0d28a8e3178
     GuidInternal: 
-    m_lastTime: -8585260914010414581
+    m_lastTime: -8585261402741394351
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -552,10 +586,10 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: c6bf5d5e153e904090e44e6fa22eeafd
     GuidInternal: 
-    m_lastTime: -8585260914010404597
+    m_lastTime: -8585261402741384355
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 0500000006000000070000001100000012000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

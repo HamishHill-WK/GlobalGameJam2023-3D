@@ -16,6 +16,8 @@
 						<ObjectRef Name="Play_digging_reverb" ID="{96D4934D-9FD4-451C-B599-A95F03F73459}" WorkUnitID="{1FD000F2-AF20-4157-AC99-E111AF6123F7}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_ambient_night" ID="{2D42AA7A-EABA-49BD-9B8A-E964238DE255}" WorkUnitID="{1FD000F2-AF20-4157-AC99-E111AF6123F7}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_ambient_birds_insects" ID="{E93BFCDE-E5EF-4A10-9FF0-63404DE1CCFE}" WorkUnitID="{1FD000F2-AF20-4157-AC99-E111AF6123F7}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_gamejamsong2_battlemusic" ID="{BB17AB9F-3B00-4A23-9B6D-F40AEA294A1F}" WorkUnitID="{1FD000F2-AF20-4157-AC99-E111AF6123F7}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_gamejamsong1" ID="{D2E77991-EFB5-4A3C-B930-9551A4C0430F}" WorkUnitID="{1FD000F2-AF20-4157-AC99-E111AF6123F7}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_meow1" ID="{A5428907-1CD7-4A48-AC3A-5AEEF90500D2}" WorkUnitID="{1FD000F2-AF20-4157-AC99-E111AF6123F7}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_ambient_windy" ID="{06F1BC39-6208-4B6E-B31F-4242B6D43BDA}" WorkUnitID="{1FD000F2-AF20-4157-AC99-E111AF6123F7}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_menu_button2" ID="{80399A2D-5D07-4D60-B8AE-EC622723D6DB}" WorkUnitID="{1FD000F2-AF20-4157-AC99-E111AF6123F7}" Origin="Manual" Filter="7"/>
