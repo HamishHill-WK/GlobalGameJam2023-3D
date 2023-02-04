@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="1661994096" Language="SFX" Hash="2763083242">
+		<SoundBank Id="1661994096" Language="SFX" Hash="2400935071">
 			<ObjectPath>\SoundBanks\Default Work Unit\SoundBank</ObjectPath>
 			<ShortName>SoundBank</ShortName>
 			<Path>SoundBank.bnk</Path>
@@ -69,7 +69,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1602358412" Name="Play_footstep" ObjectPath="\Events\Default Work Unit\Play_footstep" DurationType="OneShot" DurationMin="0.378095" DurationMax="0.378095">
+				<Event Id="1602358412" Name="Play_footstep" ObjectPath="\Events\Default Work Unit\Play_footstep" DurationType="OneShot" DurationMin="0.119093" DurationMax="0.378095">
 					<IncludedMemoryFiles>
 						<File Id="413065541" Language="SFX">
 							<ShortName>footstep.wav</ShortName>

@@ -328,6 +328,20 @@
 				<Folder Name="Footsteps" ID="{927DC498-C609-4C2A-8257-5CB4ABA1F66C}" ShortID="726872094">
 					<ChildrenList>
 						<Sound Name="footstep" ID="{2509EC85-F7A3-4344-8250-ED82E86103EC}" ShortID="451318334">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{36209833-5A67-4DE2-BAE0-3AD72BD008AD}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="2000"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD69D4FD-D202-437C-89A7-2FA33DC2543D}"/>
