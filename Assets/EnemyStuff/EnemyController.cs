@@ -12,6 +12,7 @@ public class EnemyController : MonoBehaviour
     
     public EnemyManager enemyManager;
 
+    private Vector3 treeLocation;
     //private void Start()
     //{
     //    agent.SetDestination(treeLocation.transform.position);
@@ -36,11 +37,35 @@ public class EnemyController : MonoBehaviour
                 agent.SetDestination(hitInfo.point);
             }
         }
+
+        CheckDistanceToPlayer();
+
     }
 
     public void SetVariables(Vector3 treePos, EnemyManager manager)
     {
+        treeLocation = treePos;
         agent.SetDestination(treePos);
         enemyManager = manager;
     }
+
+    private void CheckDistanceToPlayer()
+    {
+        foreach(PlayerMovementThrd player in FindObjectsOfType<PlayerMovementThrd>())
+        {
+            Vector3 playerPos = player.transform.position;
+
+            float distance = Vector3.Distance(playerPos, transform.position);
+
+            if(distance < 5)
+            {
+                agent.SetDestination(playerPos);
+            }
+            else if (distance > 5)
+            {
+                agent.SetDestination(treeLocation);
+            }
+        }
+    }
+
 }
