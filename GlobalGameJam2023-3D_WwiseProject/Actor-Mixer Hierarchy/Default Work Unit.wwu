@@ -31,7 +31,7 @@
 								<ActiveSource Name="purr_loopable" ID="{2E357A79-9613-44CF-B61C-EA4575C3774A}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<RandomSequenceContainer Name="New Random Container" ID="{6E5D21AC-97B3-419E-8B4B-663886584B12}" ShortID="499840765">
+						<RandomSequenceContainer Name="MeowContainer" ID="{CD7467AB-4AF1-4F77-B6B5-F531B85D82A6}" ShortID="359373489">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD69D4FD-D202-437C-89A7-2FA33DC2543D}"/>
@@ -41,44 +41,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="meow1" ID="{688BD1D6-C247-42F4-B2BE-26425E78F871}" ShortID="494385474">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-20</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD69D4FD-D202-437C-89A7-2FA33DC2543D}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4A9965A4-A5FB-4CF9-8E18-B607C02C7674}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="meow1" ID="{BD1878F4-6187-41BC-86EC-2768BE81C999}">
-											<Language>SFX</Language>
-											<AudioFile>meow1.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="653328147"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="meow1" ID="{BD1878F4-6187-41BC-86EC-2768BE81C999}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
 								<Sound Name="meow2" ID="{024D90F9-CED2-4630-A984-9CA799DF04B0}" ShortID="510742422">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-20</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD69D4FD-D202-437C-89A7-2FA33DC2543D}"/>
@@ -99,6 +62,29 @@
 									<ObjectLists/>
 									<ActiveSourceList>
 										<ActiveSource Name="meow2" ID="{055FCB15-34DC-4690-AD42-723A335392D0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="meow1" ID="{688BD1D6-C247-42F4-B2BE-26425E78F871}" ShortID="494385474">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD69D4FD-D202-437C-89A7-2FA33DC2543D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4A9965A4-A5FB-4CF9-8E18-B607C02C7674}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="meow1" ID="{BD1878F4-6187-41BC-86EC-2768BE81C999}">
+											<Language>SFX</Language>
+											<AudioFile>meow1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="653328147"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="meow1" ID="{BD1878F4-6187-41BC-86EC-2768BE81C999}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
@@ -355,6 +341,20 @@
 				<Folder Name="Footsteps" ID="{927DC498-C609-4C2A-8257-5CB4ABA1F66C}" ShortID="726872094">
 					<ChildrenList>
 						<Sound Name="footstep" ID="{2509EC85-F7A3-4344-8250-ED82E86103EC}" ShortID="451318334">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{36209833-5A67-4DE2-BAE0-3AD72BD008AD}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="2000"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD69D4FD-D202-437C-89A7-2FA33DC2543D}"/>

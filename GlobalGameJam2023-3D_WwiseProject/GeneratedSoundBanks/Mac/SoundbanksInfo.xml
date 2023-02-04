@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="140">
 	<RootPaths>
-		<ProjectRoot>D:\LocalWorkDir\2203493\GlobalGameJam2023-3D\GlobalGameJam2023-3D_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>D:\LocalWorkDir\2203493\GlobalGameJam2023-3D\GlobalGameJam2023-3D_WwiseProject\.cache\Mac\</SourceFilesRoot>
-		<SoundBanksRoot>D:\LocalWorkDir\2203493\GlobalGameJam2023-3D\GlobalGameJam2023-3D_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ProjectRoot>C:\Abertay\GGJ\GlobalGameJam2023-3D\GlobalGameJam2023-3D_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Abertay\GGJ\GlobalGameJam2023-3D\GlobalGameJam2023-3D_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Abertay\GGJ\GlobalGameJam2023-3D\GlobalGameJam2023-3D_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>D:\LocalWorkDir\2203493\GlobalGameJam2023-3D\GlobalGameJam2023-3D_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Abertay\GGJ\GlobalGameJam2023-3D\GlobalGameJam2023-3D_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="1661994096" Language="SFX" Hash="2021289506">
+		<SoundBank Id="1661994096" Language="SFX" Hash="64582093">
 			<ObjectPath>\SoundBanks\Default Work Unit\SoundBank</ObjectPath>
 			<ShortName>SoundBank</ShortName>
 			<Path>SoundBank.bnk</Path>
@@ -81,11 +81,27 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1602358412" Name="Play_footstep" ObjectPath="\Events\Default Work Unit\Play_footstep" DurationType="OneShot" DurationMin="0.378095" DurationMax="0.378095">
+				<Event Id="1602358412" Name="Play_footstep" ObjectPath="\Events\Default Work Unit\Play_footstep" DurationType="OneShot" DurationMin="0.119093" DurationMax="0.378095">
 					<IncludedMemoryFiles>
 						<File Id="413065541" Language="SFX">
 							<ShortName>footstep.wav</ShortName>
 							<Path>SFX\footstep_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="861759052" Name="Play_gamejamsong1" ObjectPath="\Events\Default Work Unit\Play_gamejamsong1" DurationType="OneShot" DurationMin="192." DurationMax="192.">
+					<IncludedMemoryFiles>
+						<File Id="134254866" Language="SFX">
+							<ShortName>gamejamsong1.wav</ShortName>
+							<Path>SFX\gamejamsong1_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2478467693" Name="Play_gamejamsong2_battlemusic" ObjectPath="\Events\Default Work Unit\Play_gamejamsong2_battlemusic" DurationType="OneShot" DurationMin="145.371429" DurationMax="145.371429">
+					<IncludedMemoryFiles>
+						<File Id="102198125" Language="SFX">
+							<ShortName>gamejamsong2_battlemusic.wav</ShortName>
+							<Path>SFX\gamejamsong2_battlemusic_D79FB2B7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

@@ -117,7 +117,7 @@
 								<Action Name="" ID="{6823A68E-6C1D-4168-AB10-4B4EF32C8466}" ShortID="899437012">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="New Random Container" ID="{6E5D21AC-97B3-419E-8B4B-663886584B12}" WorkUnitID="{EE006902-9239-48EA-BF1A-D726C8744089}"/>
+											<ObjectRef Name="MeowContainer" ID="{CD7467AB-4AF1-4F77-B6B5-F531B85D82A6}" WorkUnitID="{EE006902-9239-48EA-BF1A-D726C8744089}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -205,6 +205,28 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="footstep" ID="{2509EC85-F7A3-4344-8250-ED82E86103EC}" WorkUnitID="{EE006902-9239-48EA-BF1A-D726C8744089}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_gamejamsong2_battlemusic" ID="{BB17AB9F-3B00-4A23-9B6D-F40AEA294A1F}">
+					<ChildrenList>
+						<Action Name="" ID="{4DD427DB-5632-439A-B818-DAA91306BF1E}" ShortID="233156">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="gamejamsong2_battlemusic" ID="{1F28A7C5-A429-4F69-8B76-0AFB7DE768BB}" WorkUnitID="{67AFFCE5-84F6-4668-96B1-063DD726A333}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_gamejamsong1" ID="{D2E77991-EFB5-4A3C-B930-9551A4C0430F}">
+					<ChildrenList>
+						<Action Name="" ID="{CB6AA447-F77A-4649-AFB7-3DC845F1E08F}" ShortID="127954212">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="gamejamsong1" ID="{1AB3517C-5568-436D-82F3-4284DF9A34F5}" WorkUnitID="{67AFFCE5-84F6-4668-96B1-063DD726A333}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

@@ -21,6 +21,8 @@ namespace AK
         static const AkUniqueID PLAY_DIGGING = 813141615U;
         static const AkUniqueID PLAY_DIGGING_REVERB = 2589767054U;
         static const AkUniqueID PLAY_FOOTSTEP = 1602358412U;
+        static const AkUniqueID PLAY_GAMEJAMSONG1 = 861759052U;
+        static const AkUniqueID PLAY_GAMEJAMSONG2_BATTLEMUSIC = 2478467693U;
         static const AkUniqueID PLAY_JUMP_LAND = 3297008698U;
         static const AkUniqueID PLAY_JUMP_LAND_PURR = 119879040U;
         static const AkUniqueID PLAY_JUMP_UP = 2372486210U;
