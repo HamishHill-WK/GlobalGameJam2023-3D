@@ -8,6 +8,9 @@ public class EnemyController : MonoBehaviour
 {
 
     [SerializeField] private NavMeshAgent agent;
+    private float health = 100;
+    
+    public EnemyManager enemyManager;
 
     //private void Start()
     //{
@@ -19,13 +22,15 @@ public class EnemyController : MonoBehaviour
     //{
 
     //}
+
+
+    
     // Update is called once per frame
     void Update()
     {
         if (Input.GetMouseButton(1))
         {
             Ray movePos = Camera.main.ScreenPointToRay(Input.mousePosition);
-
             if (Physics.Raycast(movePos, out var hitInfo))
             {
                 agent.SetDestination(hitInfo.point);
@@ -33,8 +38,9 @@ public class EnemyController : MonoBehaviour
         }
     }
 
-    public void MoveToTree(Vector3 treePos)
+    public void SetVariables(Vector3 treePos, EnemyManager manager)
     {
         agent.SetDestination(treePos);
+        enemyManager = manager;
     }
 }
