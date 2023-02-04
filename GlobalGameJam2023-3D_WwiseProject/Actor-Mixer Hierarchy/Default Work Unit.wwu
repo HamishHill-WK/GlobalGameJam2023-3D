@@ -31,7 +31,7 @@
 								<ActiveSource Name="purr_loopable" ID="{2E357A79-9613-44CF-B61C-EA4575C3774A}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="meow1" ID="{688BD1D6-C247-42F4-B2BE-26425E78F871}" ShortID="494385474">
+						<RandomSequenceContainer Name="New Random Container" ID="{6E5D21AC-97B3-419E-8B4B-663886584B12}" ShortID="499840765">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD69D4FD-D202-437C-89A7-2FA33DC2543D}"/>
@@ -41,42 +41,69 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="meow1" ID="{BD1878F4-6187-41BC-86EC-2768BE81C999}">
-									<Language>SFX</Language>
-									<AudioFile>meow1.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="653328147"/>
-									</MediaIDList>
-								</AudioFileSource>
+								<Sound Name="meow1" ID="{688BD1D6-C247-42F4-B2BE-26425E78F871}" ShortID="494385474">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-20</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD69D4FD-D202-437C-89A7-2FA33DC2543D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4A9965A4-A5FB-4CF9-8E18-B607C02C7674}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="meow1" ID="{BD1878F4-6187-41BC-86EC-2768BE81C999}">
+											<Language>SFX</Language>
+											<AudioFile>meow1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="653328147"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="meow1" ID="{BD1878F4-6187-41BC-86EC-2768BE81C999}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="meow2" ID="{024D90F9-CED2-4630-A984-9CA799DF04B0}" ShortID="510742422">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-20</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD69D4FD-D202-437C-89A7-2FA33DC2543D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4A9965A4-A5FB-4CF9-8E18-B607C02C7674}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="meow2" ID="{055FCB15-34DC-4690-AD42-723A335392D0}">
+											<Language>SFX</Language>
+											<AudioFile>meow2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="648578355"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="meow2" ID="{055FCB15-34DC-4690-AD42-723A335392D0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="meow1" ID="{BD1878F4-6187-41BC-86EC-2768BE81C999}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="meow2" ID="{024D90F9-CED2-4630-A984-9CA799DF04B0}" ShortID="510742422">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD69D4FD-D202-437C-89A7-2FA33DC2543D}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4A9965A4-A5FB-4CF9-8E18-B607C02C7674}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="meow2" ID="{055FCB15-34DC-4690-AD42-723A335392D0}">
-									<Language>SFX</Language>
-									<AudioFile>meow2.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="648578355"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="meow2" ID="{055FCB15-34DC-4690-AD42-723A335392D0}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
+						</RandomSequenceContainer>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Digging" ID="{5A3238AC-57CB-49FD-83A1-5CA0FBED645A}" ShortID="374112422">

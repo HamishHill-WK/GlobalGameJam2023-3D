@@ -13,6 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID MEOWCONTAINER = 1650539550U;
         static const AkUniqueID PLAY_AMBIENT_BIRDS_INSECTS = 1748835869U;
         static const AkUniqueID PLAY_AMBIENT_CALM = 3522202468U;
         static const AkUniqueID PLAY_AMBIENT_NIGHT = 894712109U;
