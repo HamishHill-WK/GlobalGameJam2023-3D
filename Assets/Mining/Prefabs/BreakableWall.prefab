@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4272066705296819839}
   - component: {fileID: 7301674764934955148}
   - component: {fileID: 3866585500721838514}
+  - component: {fileID: 8542294291158694940}
   m_Layer: 0
   m_Name: BreakableWall
   m_TagString: Untagged
@@ -28,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 3800206905800716631}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.4667263, y: -4.171984, z: -18.365593}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 4, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -97,3 +98,16 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8542294291158694940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3800206905800716631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b31daf361daffa44fa918ed1a0b1f7d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  durability: 2
