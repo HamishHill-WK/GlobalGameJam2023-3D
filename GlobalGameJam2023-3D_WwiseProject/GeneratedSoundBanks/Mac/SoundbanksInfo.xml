@@ -16,11 +16,23 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="1661994096" Language="SFX" Hash="3323198117">
+		<SoundBank Id="1661994096" Language="SFX" Hash="64582093">
 			<ObjectPath>\SoundBanks\Default Work Unit\SoundBank</ObjectPath>
 			<ShortName>SoundBank</ShortName>
 			<Path>SoundBank.bnk</Path>
 			<IncludedEvents>
+				<Event Id="1650539550" Name="MeowContainer" ObjectPath="\Events\Default Work Unit\CatSounds\MeowContainer" DurationType="OneShot" DurationMin="0.705351" DurationMax="0.705351">
+					<IncludedMemoryFiles>
+						<File Id="648578355" Language="SFX">
+							<ShortName>meow2.wav</ShortName>
+							<Path>SFX\meow2_10C4C929.wem</Path>
+						</File>
+						<File Id="653328147" Language="SFX">
+							<ShortName>meow1.wav</ShortName>
+							<Path>SFX\meow1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="1748835869" Name="Play_ambient_birds_insects" ObjectPath="\Events\Default Work Unit\Ambient\Play_ambient_birds_insects" DurationType="OneShot" DurationMin="51.692314" DurationMax="51.692314">
 					<IncludedMemoryFiles>
 						<File Id="1039984839" Language="SFX">

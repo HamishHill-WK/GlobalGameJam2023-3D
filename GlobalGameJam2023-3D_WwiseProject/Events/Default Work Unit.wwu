@@ -117,7 +117,7 @@
 								<Action Name="" ID="{6823A68E-6C1D-4168-AB10-4B4EF32C8466}" ShortID="899437012">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="New Random Container" ID="{6E5D21AC-97B3-419E-8B4B-663886584B12}" WorkUnitID="{EE006902-9239-48EA-BF1A-D726C8744089}"/>
+											<ObjectRef Name="MeowContainer" ID="{CD7467AB-4AF1-4F77-B6B5-F531B85D82A6}" WorkUnitID="{EE006902-9239-48EA-BF1A-D726C8744089}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

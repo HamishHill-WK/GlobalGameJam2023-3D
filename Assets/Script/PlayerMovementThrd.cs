@@ -59,14 +59,14 @@ public class PlayerMovementThrd : MonoBehaviour
 
     private void PlayerMovement()
     {
-	    if (Input.GetButton("Sprint"))
-	    {
-		    speed = 18f;
-	    }
-	    else
-	    {
+	    //if (Input.GetButton("Sprint"))
+	    //{
+		   // speed = 18f;
+	    //}
+	    //else
+	    //{
 		    speed = 12;
-	    }
+	 //   }
 
 	    float horizontal = Input.GetAxisRaw("Horizontal");
 	    float vertical = Input.GetAxisRaw("Vertical");

@@ -17,7 +17,7 @@ public class PlayOnKeyPress : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Q))
         {
-
+            Debug.Log("lol");
             meow.Post(gameObject);
         }
     }

@@ -5,6 +5,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	861759052	Play_gamejamsong1			\Default Work Unit\Play_gamejamsong1	
 	894712109	Play_ambient_night			\Default Work Unit\Ambient\Play_ambient_night	
 	1602358412	Play_footstep			\Default Work Unit\Play_footstep	
+	1650539550	MeowContainer			\Default Work Unit\CatSounds\MeowContainer	
 	1748835869	Play_ambient_birds_insects			\Default Work Unit\Ambient\Play_ambient_birds_insects	
 	1758056349	Play_menu_button_startgame			\Default Work Unit\UI\Play_menu_button_startgame	
 	1791777216	Play_ambient_windy			\Default Work Unit\Ambient\Play_ambient_windy	
