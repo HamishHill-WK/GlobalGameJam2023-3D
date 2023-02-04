@@ -26,13 +26,15 @@ public class PlayerMovementThrd : MonoBehaviour
 
     public float turnSmoothTime = 0.1f;
     float turnSmoothVelocity;
-
+    private void Start()
+    {
+        Cursor.visible = false;
+    }
     // Update is called once per frame
     void Update()
     {
         if (Input.GetButton("Sprint"))
         {
-            Debug.Log("aaaaa");
             speed = 18f;
         } else
         {
