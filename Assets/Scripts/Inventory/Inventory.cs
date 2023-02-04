@@ -13,6 +13,8 @@ namespace InventorySystem
         [SerializeField]
         private List<InventorySlot> slots;
 
+        public int Size => _size;
+
         private void OnValidate()
         {
             AdjustSize();
