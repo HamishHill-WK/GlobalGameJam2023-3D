@@ -23,13 +23,19 @@ public class PlayerMovementThrd : MonoBehaviour
     public Transform ground_check;
     public float ground_distance = 0.4f;
     public LayerMask ground_mask;
-	
+
+	[Header("Melee Attack Settings")]
+	[SerializeField] private GameObject MeeleCollisionBox;
+	[SerializeField] private float MeeleAttackAnimationDuration = 0.5f;
+	[SerializeField] private float MeeleAttackCooldown = 0.25f;
+	private bool _isMeeleAttackActivated = false;
+
 	[Header("Ranged Attack Settings")]
 	[SerializeField] private GameObject CrosshairModel;
 	[SerializeField] private GameObject AttackModel;
 	[SerializeField] private float RangedAttackCoolDown = 3f;
 	[SerializeField] private float RangedAttackRange = 15f;
-	private bool _isRangedAttackActivated;
+	private bool _isRangedAttackActivated = false;
 
 	Vector3 velocity;
     bool isGrounded;
@@ -38,13 +44,16 @@ public class PlayerMovementThrd : MonoBehaviour
 
     private void Start()
     {
-		_isRangedAttackActivated = false;
+	    MeeleCollisionBox.SetActive(false);
+		CrosshairModel.SetActive(false);
+		AttackModel.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
 	    PlayerMovement();
+	    MeeleAttack();
 		RangedAttack();
     }
 
@@ -88,7 +97,32 @@ public class PlayerMovementThrd : MonoBehaviour
 	    controller.Move(velocity * Time.deltaTime);
     }
 
-    private void RangedAttack()
+    private void MeeleAttack()
+    {
+	    if(_isMeeleAttackActivated)
+			return;
+
+	    if (Input.GetMouseButton(0))
+		{
+			StartCoroutine(MeeleAttackSequence());
+		}
+    }
+
+    private IEnumerator MeeleAttackSequence()
+    {
+		//Collision Happens Here
+	    _isMeeleAttackActivated = true;
+		MeeleCollisionBox.SetActive(true);
+		yield return new WaitForSeconds(MeeleAttackAnimationDuration);
+
+		//Cooldown Between Attacks Happen Here
+		MeeleCollisionBox.SetActive(false);
+		yield return new WaitForSeconds(MeeleAttackCooldown);
+
+		_isMeeleAttackActivated = false;
+	}
+
+	private void RangedAttack()
     {
 	    if (_isRangedAttackActivated)
 		    return;
