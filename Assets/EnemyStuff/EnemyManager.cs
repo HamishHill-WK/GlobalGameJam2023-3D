@@ -4,17 +4,24 @@ using UnityEngine;
 
 public class EnemyManager : MonoBehaviour
 {
-    [SerializeField] private int enemyCap = 5;
+    public enum WaveState { Spawning, Waiting, Counting};
+    private WaveState currentState = WaveState.Counting;
 
+    public int enemyCap = 5;
+    public int totalSpawned = 0;
+
+    [Header("Wave Details")]
+    [SerializeField] private float timeBetweenWave = 5f;
 
     private List<EnemyController> activeEnemies = new List<EnemyController>();
 
-    private bool atMax = false;
+    private bool reachedCap = false;
+    private float countdown = 0f;
 
     // Start is called before the first frame update
     void Start()
     {
-        //activeEnemies = new List<EnemyController>();
+        countdown = timeBetweenWave;
     }
 
     // Update is called once per frame
@@ -32,15 +39,27 @@ public class EnemyManager : MonoBehaviour
             }
         }
 
-
-        if (atMax && activeEnemies.Count < enemyCap)
+        if (currentState != WaveState.Counting)
         {
-            atMax = false;
+            if (activeEnemies.Count == 0 && reachedCap)
+                NewWave();
+            else 
+                return;
+        }
 
-            foreach (SpawnerScript tempThing in FindObjectsOfType<SpawnerScript>())
+        if (countdown <= 0)
+        {
+            if (currentState != WaveState.Spawning)
             {
-                tempThing.StartSpawning();
+                foreach (SpawnerScript tempThing in FindObjectsOfType<SpawnerScript>())
+                {
+                    tempThing.StartSpawning();
+                }
             }
+        }
+        else
+        {
+            countdown -= Time.deltaTime;
         }
     }
 
@@ -48,9 +67,10 @@ public class EnemyManager : MonoBehaviour
     {
         EnemyController temp = enem.GetComponent<EnemyController>();
         activeEnemies.Add(temp);
+        totalSpawned++;
 
-        if (activeEnemies.Count == enemyCap)
-            atMax = true;
+        if (totalSpawned == enemyCap)
+            reachedCap = true;
     }
 
     public void RemoveEnemy(GameObject enem)
@@ -63,9 +83,28 @@ public class EnemyManager : MonoBehaviour
     {
         return activeEnemies.Count;
     }
-
-    public bool GetAtMax()
+    public int GetTotalEnemiesSpawned()
     {
-        return atMax;
+        return totalSpawned;
+    }
+
+    public bool IsCapReached()
+    {
+        return reachedCap;
+    }
+
+    public void SetWaveState(WaveState state)
+    {
+        currentState = state;
+    }
+
+    private void NewWave()
+    {
+        currentState = WaveState.Counting;
+        countdown = timeBetweenWave;
+
+        enemyCap += 4;
+        totalSpawned = 0;
+        reachedCap = false;
     }
 }
