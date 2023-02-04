@@ -27,8 +27,7 @@ public class EnemyManager : MonoBehaviour
             {
                 if (hitInfo.collider.name == "EnemyPrefab(Clone)")
                 {
-                    RemoveEnemy(hitInfo.collider.gameObject);
-                    Destroy(hitInfo.collider.gameObject);
+                    hitInfo.collider.GetComponent<EnemyController>().ApplyDamage(100);
                 }
             }
         }

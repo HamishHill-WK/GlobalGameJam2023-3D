@@ -8,23 +8,11 @@ public class EnemyController : MonoBehaviour
 {
 
     [SerializeField] private NavMeshAgent agent;
+    private EnemyManager enemyManager;
+
+
     private float health = 100;
-    
-    public EnemyManager enemyManager;
-
     private Vector3 treeLocation;
-    //private void Start()
-    //{
-    //    agent.SetDestination(treeLocation.transform.position);
-
-    //}
-
-    //private void Awake()
-    //{
-
-    //}
-
-
     
     // Update is called once per frame
     void Update()
@@ -47,6 +35,17 @@ public class EnemyController : MonoBehaviour
         treeLocation = treePos;
         agent.SetDestination(treePos);
         enemyManager = manager;
+    }
+
+    public void ApplyDamage(float damage)
+    {
+        health -= damage;
+
+        if(health <= 0)
+        {
+            enemyManager.RemoveEnemy(gameObject);
+            Destroy(gameObject);
+        }
     }
 
     private void CheckDistanceToPlayer()
