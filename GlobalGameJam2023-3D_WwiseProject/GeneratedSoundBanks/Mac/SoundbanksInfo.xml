@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="140">
 	<RootPaths>
-		<ProjectRoot>D:\LocalWorkDir\2203493\GlobalGameJam2023-3D\GlobalGameJam2023-3D_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>D:\LocalWorkDir\2203493\GlobalGameJam2023-3D\GlobalGameJam2023-3D_WwiseProject\.cache\Mac\</SourceFilesRoot>
-		<SoundBanksRoot>D:\LocalWorkDir\2203493\GlobalGameJam2023-3D\GlobalGameJam2023-3D_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ProjectRoot>C:\Abertay\GGJ\GlobalGameJam2023-3D\GlobalGameJam2023-3D_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Abertay\GGJ\GlobalGameJam2023-3D\GlobalGameJam2023-3D_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Abertay\GGJ\GlobalGameJam2023-3D\GlobalGameJam2023-3D_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>D:\LocalWorkDir\2203493\GlobalGameJam2023-3D\GlobalGameJam2023-3D_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Abertay\GGJ\GlobalGameJam2023-3D\GlobalGameJam2023-3D_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -16,23 +16,11 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="1661994096" Language="SFX" Hash="2021289506">
+		<SoundBank Id="1661994096" Language="SFX" Hash="2910122176">
 			<ObjectPath>\SoundBanks\Default Work Unit\SoundBank</ObjectPath>
 			<ShortName>SoundBank</ShortName>
 			<Path>SoundBank.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1650539550" Name="MeowContainer" ObjectPath="\Events\Default Work Unit\CatSounds\MeowContainer" DurationType="OneShot" DurationMin="0.705351" DurationMax="0.705351">
-					<IncludedMemoryFiles>
-						<File Id="648578355" Language="SFX">
-							<ShortName>meow2.wav</ShortName>
-							<Path>SFX\meow2_10C4C929.wem</Path>
-						</File>
-						<File Id="653328147" Language="SFX">
-							<ShortName>meow1.wav</ShortName>
-							<Path>SFX\meow1_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
 				<Event Id="1748835869" Name="Play_ambient_birds_insects" ObjectPath="\Events\Default Work Unit\Ambient\Play_ambient_birds_insects" DurationType="OneShot" DurationMin="51.692314" DurationMax="51.692314">
 					<IncludedMemoryFiles>
 						<File Id="1039984839" Language="SFX">

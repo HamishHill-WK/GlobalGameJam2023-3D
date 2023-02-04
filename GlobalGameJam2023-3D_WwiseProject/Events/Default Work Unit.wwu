@@ -112,17 +112,6 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="MeowContainer" ID="{497505A4-CFBF-434E-A745-D80282A05F37}">
-							<ChildrenList>
-								<Action Name="" ID="{6823A68E-6C1D-4168-AB10-4B4EF32C8466}" ShortID="899437012">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="New Random Container" ID="{6E5D21AC-97B3-419E-8B4B-663886584B12}" WorkUnitID="{EE006902-9239-48EA-BF1A-D726C8744089}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Jumping" ID="{81C24751-805C-4C49-AC38-1137647C796B}" ShortID="766106747">
