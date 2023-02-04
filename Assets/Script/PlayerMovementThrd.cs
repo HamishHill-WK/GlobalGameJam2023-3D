@@ -32,10 +32,11 @@ public class PlayerMovementThrd : MonoBehaviour
 
 	[Header("Ranged Attack Settings")]
 	[SerializeField] private GameObject CrosshairModel;
-	[SerializeField] private GameObject AttackModel;
+	[SerializeField] private GameObject RangedAttackModel;
 	[SerializeField] private float RangedAttackCoolDown = 3f;
 	[SerializeField] private float RangedAttackRange = 15f;
-	private bool _isRangedAttackActivated = false;
+	[SerializeField] private float RangedAttackAOESizeIncrease = 0.25f;
+	private byte _remainingRangedAttacks = 2;
 
 	Vector3 velocity;
     bool isGrounded;
@@ -46,7 +47,6 @@ public class PlayerMovementThrd : MonoBehaviour
     {
 	    MeeleCollisionBox.SetActive(false);
 		CrosshairModel.SetActive(false);
-		AttackModel.SetActive(false);
     }
 
     // Update is called once per frame
@@ -124,10 +124,14 @@ public class PlayerMovementThrd : MonoBehaviour
 
 	private void RangedAttack()
     {
-	    if (_isRangedAttackActivated)
-		    return;
+	    if (_remainingRangedAttacks <= 0)
+	    {
+			CrosshairModel.SetActive(false);
+			return;
+	    }
+		CrosshairModel.SetActive(true);
 
-	    Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 		RaycastHit hit;
 		if (Physics.Raycast(ray, out hit, 100, LayerMask.GetMask("whatIsGround")))
 		{
@@ -155,16 +159,29 @@ public class PlayerMovementThrd : MonoBehaviour
 
     private IEnumerator RangedAttackSequence()
     {
-	    CrosshairModel.SetActive(false);
-	    AttackModel.SetActive(true);
-	    _isRangedAttackActivated = true;
+	    _remainingRangedAttacks--;
 
-		AttackModel.transform.position = CrosshairModel.transform.position;
+	    var newRangedAttack = GameObject.Instantiate(RangedAttackModel, CrosshairModel.transform.position, Quaternion.identity);
+		newRangedAttack.transform.localScale = new Vector3(CrosshairModel.transform.localScale.x, newRangedAttack.transform.localScale.y, CrosshairModel.transform.localScale.z);
 
-		yield return new WaitForSeconds(RangedAttackCoolDown);
+	    yield return new WaitForSeconds(RangedAttackCoolDown);
+		
+		GameObject.Destroy(newRangedAttack);
+		_remainingRangedAttacks++;
+    }
 
-	    CrosshairModel.SetActive(true);
-		AttackModel.SetActive(false);
-		_isRangedAttackActivated = false;
+    public void IncreaseMaxRangedAttacks()
+    {
+	    _remainingRangedAttacks++;
+    }
+
+    public void IncreaseRangedAttackAOE()
+    {
+	    CrosshairModel.transform.localScale += new Vector3(RangedAttackAOESizeIncrease, 0, RangedAttackAOESizeIncrease);
+    }
+
+    public void IncreaseRangedAttackCooldown() //Increases cooldown to make it stay longer on the ground
+    {
+	    RangedAttackCoolDown += 0.5f;
     }
 }

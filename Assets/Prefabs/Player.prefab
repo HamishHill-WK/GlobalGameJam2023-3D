@@ -279,7 +279,7 @@ Transform:
   - {fileID: 284004380}
   - {fileID: 5273148381501644800}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!143 &2055072083
 CharacterController:
@@ -326,7 +326,7 @@ MonoBehaviour:
   MeeleAttackAnimationDuration: 0.5
   MeeleAttackCooldown: 0.5
   CrosshairModel: {fileID: 0}
-  AttackModel: {fileID: 0}
+  RangedAttackModel: {fileID: 1574617582368257513, guid: 48ab66dc8cb194949a9c998bde80ced4, type: 3}
   RangedAttackCoolDown: 3
   RangedAttackRange: 15
 --- !u!1 &5326912061819848078
