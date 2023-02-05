@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
-using UnityEditor.UI;
 using UnityEngine;
 using UnityEngine.Experimental.Rendering;
 using UnityEngine.Serialization;
@@ -67,6 +66,11 @@ public class PlayerMovementThrd : MonoBehaviour
 		PlayerMovement();
 	    MeeleAttack();
 		RangedAttack();
+
+		if (Input.GetKeyDown(KeyCode.Escape))
+        {
+			Application.Quit();
+        }
     }
 
     private void PlayerMovement()
