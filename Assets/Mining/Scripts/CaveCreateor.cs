@@ -12,14 +12,17 @@ public class CaveCreateor : MonoBehaviour
 
     public Vector2 size;
     public int startPosition = 0;
+    public GameObject room;
+    public Vector2 offset;
 
     List<Cell> board;
 
     // Start is called before the first frame update
     void Start()
     {
+        GenerateMaze();
+        GenerateCave();
     }
-
 
     void GenerateMaze()
     {
@@ -54,7 +57,7 @@ public class CaveCreateor : MonoBehaviour
                 }
                 else
                 {
-                    path.Pop();
+                    currentCell = path.Pop();
 
                 }
             }
@@ -111,6 +114,18 @@ public class CaveCreateor : MonoBehaviour
         }
 
     }
+    void GenerateCave()
+    {
+        for (int i = 0; i < size.x; i++)
+        {
+            for (int j = 0; j < size.y; j++)
+            {
+               var newRoom = Instantiate(room, new Vector3(i * offset.x, 0, -j * offset.y), Quaternion.identity, transform).GetComponent<RoomBehaivour>();
+                newRoom.UpdateRoom(board[Mathf.FloorToInt(i + j * size.x)].status);
+                newRoom.name += " " + i + "-" + j;
+            }
+        }
+    }
 
     //Check all adjacent neighbor cells on the board
     List<int> CheckNeighbors(int cell)
@@ -144,8 +159,5 @@ public class CaveCreateor : MonoBehaviour
         return neighbors;
     }
 
-    void GenerateCave()
-    {
-
-    }
+  
 }
