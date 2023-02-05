@@ -36,7 +36,10 @@ public class SpawnMineral : MonoBehaviour
         {
             //Position and Rotation
             
-            Vector3 position = new Vector3(boxCollider.transform.position.x + Random.Range(-boxCollider.size.x / 2, boxCollider.size.x / 2) * boxCollider.transform.localScale.x, boxCollider.transform.position.y + Random.Range(-boxCollider.size.y / 2, boxCollider.size.y / 2) * boxCollider.transform.localScale.y, boxCollider.transform.position.z);
+            Vector3 position = 
+                new Vector3(boxCollider.transform.position.x + Random.Range(-boxCollider.size.x / 2, boxCollider.size.x / 2) * boxCollider.transform.localScale.x, 
+                boxCollider.transform.position.y + Random.Range(-boxCollider.size.y / 2, boxCollider.size.y / 2) * boxCollider.transform.localScale.y,
+                boxCollider.transform.position.z + Random.Range(-boxCollider.size.z / 2, boxCollider.size.z / 2) * boxCollider.transform.localScale.z);
             Vector3 rotation = new Vector3(Random.Range(0, 360), Random.Range(0, 360), Random.Range(0, 360));
             
             GameObject minable = Instantiate(Mineral, position, new Quaternion(rotation.x, rotation.y, rotation.z, 0));
