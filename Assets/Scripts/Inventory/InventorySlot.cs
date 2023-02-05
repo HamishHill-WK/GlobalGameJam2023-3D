@@ -57,7 +57,6 @@ namespace InventorySystem
         private void NotifyAboutStateChanged()
         {
             StateChanged?.Invoke(this, new InventorySlotStateChangedArgs(state, active));
-
         }
     }
 }

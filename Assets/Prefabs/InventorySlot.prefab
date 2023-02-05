@@ -95,6 +95,7 @@ MonoBehaviour:
   inventory: {fileID: 0}
   inventorySlotIndex: 0
   itemIcon: {fileID: 2214587022385246517}
+  activeIndicator: {fileID: 1953398786094740476}
   numberOfItems: {fileID: 2214587022938297884}
 --- !u!1 &2214587022385246519
 GameObject:

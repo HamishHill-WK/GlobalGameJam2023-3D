@@ -19,6 +19,9 @@ namespace InventorySystem.UI
         private Image itemIcon;
 
         [SerializeField]
+        private Image activeIndicator;
+        
+        [SerializeField]
         private TMP_Text numberOfItems;
         
         private InventorySlot slot;
@@ -40,7 +43,7 @@ namespace InventorySystem.UI
 
         private void UpdateViewState(ItemStack state, bool active)
         {
-            // enable active indicator
+            activeIndicator.enabled = active;
             var item = state?.Item;
             var hasItem = item != null;
             var isStackable = hasItem && item.IsStackable;

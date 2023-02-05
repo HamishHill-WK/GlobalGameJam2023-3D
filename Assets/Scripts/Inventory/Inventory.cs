@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEditor.Profiling;
 using UnityEngine;
 
 namespace InventorySystem
@@ -30,6 +32,14 @@ namespace InventorySystem
             }
         }
 
+        private void Awake()
+        {
+            if (_size > 0)
+            {
+                slots[0].Active = true;
+            }
+        }
+
         private void OnValidate()
         {
             AdjustSize();
@@ -44,8 +54,6 @@ namespace InventorySystem
 
             if (slots.Count < _size)
                 slots.AddRange(new InventorySlot[_size - slots.Count]);
-
-
         }
 
         public bool IsFull()
@@ -66,7 +74,19 @@ namespace InventorySystem
 
         public bool HasItem(ItemStack itemStack, bool checkNumberOfItems = false)
         {
-            return false;
+            var itemSlot = FindSlot(itemStack.Item);
+            if (itemSlot == null) return false;
+            if (!checkNumberOfItems) return true;
+            
+            if (itemStack.Item.IsStackable)
+            {
+                return itemSlot.NumberOfItems >= itemStack.NumberOfItems;
+            }
+            else
+            {
+                return slots.Count(slot => slot.Item == itemStack.Item) >= itemStack.NumberOfItems;
+            }
+
         }
         
         public ItemStack AddItem(ItemStack itemStack)
@@ -88,6 +108,45 @@ namespace InventorySystem
             }
 
             return relevantSlot.State;
+        }
+
+        public ItemStack RemoveItem(int atIndex, bool spawn = false)
+        {
+            if (!slots[atIndex].HasItem)
+            {
+                throw new InventoryException(InventoryOperation.Remove, "Slot is Empty!");
+            }
+
+            if (spawn)
+            {
+                
+            }
+            
+            ClearSlot(atIndex);
+            return new ItemStack();
+        }
+
+        public ItemStack RemoveItem(ItemStack itemStack)
+        {
+            var itemSlot = FindSlot(itemStack.Item);
+            if (itemSlot == null)
+                throw new InventoryException(InventoryOperation.Remove, "No Item in the Inventory!");
+            
+            if (itemSlot.Item.IsStackable && itemSlot.NumberOfItems < itemStack.NumberOfItems)
+                throw new InventoryException(InventoryOperation.Remove, "Not enough items!");
+
+            itemSlot.NumberOfItems -= itemStack.NumberOfItems;
+            if (itemSlot.Item.IsStackable && itemSlot.NumberOfItems > 0)
+                return itemSlot.State;
+            
+            itemSlot.Clear();
+
+            return new ItemStack();
+        }
+
+        public void ClearSlot(int atIndex)
+        {
+            slots[atIndex].Clear();
         }
 
         public void ActivateSlot(int atIndex)
