@@ -31,7 +31,7 @@ namespace InventorySystem.UI
                 uiSlot.transform.SetParent(transform, false);
 
                 var uiSlotScript = uiSlot.GetComponent<UI_InventorySlot>();
-
+                uiSlotScript.AssignSlot(i);
                 slots.Add(uiSlotScript);
             }
         }

@@ -13,7 +13,22 @@ namespace InventorySystem
         [SerializeField]
         private List<InventorySlot> slots;
 
+        private int activeSlotIndex;
+
         public int Size => _size;
+
+        public List<InventorySlot> Slots => slots;
+
+        public int ActiveSlotIndex
+        {
+            get => activeSlotIndex;
+            private set
+            {
+                slots[activeSlotIndex].Active = false;
+                activeSlotIndex = value < 0 ? _size - 1 : value % Size;
+                slots[activeSlotIndex].Active = true;
+            }
+        }
 
         private void OnValidate()
         {
@@ -49,6 +64,11 @@ namespace InventorySystem
             return slots.FirstOrDefault(slot => slot.Item == item && item.IsStackable || !onlyStackable);
         }
 
+        public bool HasItem(ItemStack itemStack, bool checkNumberOfItems = false)
+        {
+            return false;
+        }
+        
         public ItemStack AddItem(ItemStack itemStack)
         {
             var relevantSlot = FindSlot(itemStack.Item, true);
@@ -70,6 +90,9 @@ namespace InventorySystem
             return relevantSlot.State;
         }
 
-
+        public void ActivateSlot(int atIndex)
+        {
+            activeSlotIndex = atIndex;
+        }
     }
 }
