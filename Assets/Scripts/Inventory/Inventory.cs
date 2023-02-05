@@ -29,6 +29,7 @@ namespace InventorySystem
                 slots[activeSlotIndex].Active = false;
                 activeSlotIndex = value < 0 ? _size - 1 : value % Size;
                 slots[activeSlotIndex].Active = true;
+                Debug.Log("active slot index changed");
             }
         }
 
@@ -151,7 +152,7 @@ namespace InventorySystem
 
         public void ActivateSlot(int atIndex)
         {
-            activeSlotIndex = atIndex;
+            ActiveSlotIndex = atIndex;
         }
     }
 }
