@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 0072ffd27b5a8441a48f41b127ac628f
     GuidInternal: 
-    m_lastTime: -8585260821887522535
+    m_lastTime: -8585260180257425515
     List:
     - name: SoundBank
       guid: 1c86cd1bc54cf34cabaf6c8ae930da7f
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: f200d01f20af5741ac99e111af6123f7
     GuidInternal: 
-    m_lastTime: -8585260821887765111
+    m_lastTime: -8585260176460046381
     List:
     - name: Ambient
       guid: 1d8fdccbe0502b4fa2c1c79ffff74281
@@ -164,6 +164,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: MeowContainer
+      guid: a4057549bfcf4e43a745d80282a05f37
+      id: 1650539550
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f200d01f20af5741ac99e111af6123f7
+      - ElementName: CatSounds
+        ObjectType: 4
+        guid: e73ed65f7d990a409ba2e6ed57bc3b0b
+      - ElementName: MeowContainer
+        ObjectType: 3
+        guid: a4057549bfcf4e43a745d80282a05f37
+      Path: Events\Default Work Unit\CatSounds\MeowContainer
+      maxAttenuation: 0
+      maxDuration: 0.705351
+      minDuration: 0.705351
     - name: Play_ambient_birds_insects
       guid: defc3be9efe5104a9ff063404de1ccfe
       id: 1748835869
@@ -300,7 +320,41 @@ MonoBehaviour:
       Path: Events\Default Work Unit\Play_footstep
       maxAttenuation: 0
       maxDuration: 0.378095
-      minDuration: 0.378095
+      minDuration: 0.119093
+    - name: Play_gamejamsong1
+      guid: 9179e7d2b5ef3c4ab9309551a4c0430f
+      id: 861759052
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f200d01f20af5741ac99e111af6123f7
+      - ElementName: Play_gamejamsong1
+        ObjectType: 3
+        guid: 9179e7d2b5ef3c4ab9309551a4c0430f
+      Path: Events\Default Work Unit\Play_gamejamsong1
+      maxAttenuation: 0
+      maxDuration: 192
+      minDuration: 192
+    - name: Play_gamejamsong2_battlemusic
+      guid: 9fab17bb003b234a9b6df40aea294a1f
+      id: 2478467693
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f200d01f20af5741ac99e111af6123f7
+      - ElementName: Play_gamejamsong2_battlemusic
+        ObjectType: 3
+        guid: 9fab17bb003b234a9b6df40aea294a1f
+      Path: Events\Default Work Unit\Play_gamejamsong2_battlemusic
+      maxAttenuation: 0
+      maxDuration: 145.37143
+      minDuration: 145.37143
     - name: Play_jump_land
       guid: d447239c86a44142b12fe786818b10b2
       id: 3297008698
@@ -555,7 +609,7 @@ MonoBehaviour:
     m_lastTime: -8585261402741384355
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 090000000a000000
+  ExpandedWaapiItemIds: 050000000600000008000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
