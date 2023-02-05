@@ -43,7 +43,12 @@ public class PlayerMovementThrd : MonoBehaviour
 
     float turnSmoothVelocity;
 
-    private void Start()
+	private bool dancing = false;
+
+	[Header("Ranged Attack Settings")]
+	[SerializeField] private Animator animator;
+
+	private void Start()
     {
 	    MeeleCollisionBox.SetActive(false);
 		CrosshairModel.SetActive(false);
@@ -52,7 +57,14 @@ public class PlayerMovementThrd : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-	    PlayerMovement();
+			
+		if(Input.GetKey(KeyCode.F))
+        {
+			dancing = !dancing;
+			animator.SetBool("Dancing", dancing);
+        }
+
+		PlayerMovement();
 	    MeeleAttack();
 		RangedAttack();
     }
@@ -71,7 +83,13 @@ public class PlayerMovementThrd : MonoBehaviour
 	    float horizontal = Input.GetAxisRaw("Horizontal");
 	    float vertical = Input.GetAxisRaw("Vertical");
 
-	    Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
+		if (horizontal != 0 || vertical != 0)
+			animator.SetBool("Moving", true);
+		else
+			animator.SetBool("Moving", false);
+		
+
+		Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
 	    float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
 	    float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
 	    transform.rotation = Quaternion.Euler(0f, angle, 0f);
@@ -90,10 +108,16 @@ public class PlayerMovementThrd : MonoBehaviour
 
 	    if (Input.GetButtonDown("Jump") && isGrounded)
 	    {
+			isGrounded = false;
+			animator.SetBool("Jump", true);
 		    velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
 	    }
 
-	    velocity.y += gravity * Time.deltaTime;
+        if (isGrounded)
+            animator.SetBool("Jump", false);
+
+
+        velocity.y += gravity * Time.deltaTime;
 	    controller.Move(velocity * Time.deltaTime);
     }
 
@@ -104,6 +128,7 @@ public class PlayerMovementThrd : MonoBehaviour
 
 	    if (Input.GetMouseButton(0))
 		{
+			animator.SetBool("Attacking", true);
 			StartCoroutine(MeeleAttackSequence());
 		}
     }
