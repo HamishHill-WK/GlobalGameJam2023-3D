@@ -6,7 +6,9 @@ using UnityEngine.AI;
 
 public class EnemyController : MonoBehaviour
 {
+    private enum EnemyState { Attacking, ChasingTree, ChasingPlayer };
 
+    private EnemyState currState = EnemyState.ChasingTree;
     [SerializeField] private NavMeshAgent agent;
     private EnemyManager enemyManager;
 
@@ -18,6 +20,19 @@ public class EnemyController : MonoBehaviour
     void Update()
     {
         CheckDistanceToPlayer();
+
+
+        if (currState != EnemyState.Attacking)
+        {
+            float dist = agent.remainingDistance;
+            if (dist != Mathf.Infinity && agent.pathStatus == NavMeshPathStatus.PathComplete && agent.remainingDistance <= 3)
+            {
+                agent.isStopped = true;
+                currState = EnemyState.Attacking;
+
+            }
+        }
+
 
     }
 
@@ -47,15 +62,36 @@ public class EnemyController : MonoBehaviour
 
             float distance = Vector3.Distance(playerPos, transform.position);
 
-            if(distance < 5)
+            if(distance < 5 && currState != EnemyState.ChasingPlayer)
             {
+                if (agent.isStopped)
+                    agent.isStopped = false;
+                currState = EnemyState.ChasingPlayer;
                 agent.SetDestination(playerPos);
             }
-            else if (distance > 5)
+            else if (distance > 5 && currState != EnemyState.ChasingTree)
             {
+                if (agent.isStopped)
+                    agent.isStopped = false;
+                currState = EnemyState.ChasingTree;
                 agent.SetDestination(treeLocation);
             }
+
         }
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        print("Collision happened");
+        if(collision.gameObject.tag == "Player")
+        {
+            print("hello");
+        }
+    }
+
+    //private IEnumerator DamagePlayer()
+    //{
+        
+    //}
 
 }
