@@ -331,6 +331,7 @@ MonoBehaviour:
   RangedAttackCoolDown: 3
   RangedAttackRange: 15
   RangedAttackAOESizeIncrease: 0.25
+  animator: {fileID: 6363332666118607978}
 --- !u!1 &5326912061819848078
 GameObject:
   m_ObjectHideFlags: 0
@@ -540,6 +541,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &5961250267475597458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3941673225486290902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bcac131b7e22b846a7478a137cb2889, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 6363332666118607978}
 --- !u!4 &4465444678522049900 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 051b9155bcd105445b970703077f759f, type: 3}

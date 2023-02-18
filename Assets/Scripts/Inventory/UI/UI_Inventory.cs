@@ -27,7 +27,7 @@ namespace InventorySystem.UI
             slots = new List<UI_InventorySlot>(inventory.Size);
             for (int i = 0; i < inventory.Size; i++)
             {
-                var uiSlot = PrefabUtility.InstantiatePrefab(inventorySlotPrefab) as GameObject;
+                var uiSlot = Instantiate(inventorySlotPrefab) as GameObject; //InstantiatePrefab(inventorySlotPrefab) as GameObject;
                 uiSlot.transform.SetParent(transform, false);
 
                 var uiSlotScript = uiSlot.GetComponent<UI_InventorySlot>();
