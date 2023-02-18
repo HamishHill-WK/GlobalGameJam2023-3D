@@ -20,22 +20,22 @@ Event	ID	Name			Wwise Object Path	Notes
 	3565569787	Play_meow1			\Default Work Unit\CatSounds\Play_meow1	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	1015891	ambient_night	C:\Abertay\GGJ\GlobalGameJam2023-3D\GlobalGameJam2023-3D_WwiseProject\.cache\Mac\SFX\ambient_night_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambient\ambient_night		4559390
-	34370976	ambient_calm	C:\Abertay\GGJ\GlobalGameJam2023-3D\GlobalGameJam2023-3D_WwiseProject\.cache\Mac\SFX\ambient_calm_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambient\ambient_calm		4559390
-	102198125	gamejamsong2_battlemusic	C:\Abertay\GGJ\GlobalGameJam2023-3D\GlobalGameJam2023-3D_WwiseProject\.cache\Mac\SFX\gamejamsong2_battlemusic_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\gamejamsong2_battlemusic\gamejamsong2_battlemusic		25643648
-	120477436	ambient_windy	C:\Abertay\GGJ\GlobalGameJam2023-3D\GlobalGameJam2023-3D_WwiseProject\.cache\Mac\SFX\ambient_windy_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambient\ambient_windy		4559390
-	134254866	gamejamsong1	C:\Abertay\GGJ\GlobalGameJam2023-3D\GlobalGameJam2023-3D_WwiseProject\.cache\Mac\SFX\gamejamsong1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\gamejamsong1\gamejamsong1		33868928
-	291559207	purr_loopable	C:\Abertay\GGJ\GlobalGameJam2023-3D\GlobalGameJam2023-3D_WwiseProject\.cache\Mac\SFX\purr_loopable_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\CatSounds\purr_loopable		219052
-	413065541	footstep	C:\Abertay\GGJ\GlobalGameJam2023-3D\GlobalGameJam2023-3D_WwiseProject\.cache\Mac\SFX\footstep_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\footstep		66824
-	563728923	digging_reverb	C:\Abertay\GGJ\GlobalGameJam2023-3D\GlobalGameJam2023-3D_WwiseProject\.cache\Mac\SFX\digging_reverb_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Digging\digging_reverb		302528
-	646617067	digging	C:\Abertay\GGJ\GlobalGameJam2023-3D\GlobalGameJam2023-3D_WwiseProject\.cache\Mac\SFX\digging_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Digging\digging		197004
-	648578355	meow2	C:\Abertay\GGJ\GlobalGameJam2023-3D\GlobalGameJam2023-3D_WwiseProject\.cache\Mac\SFX\meow2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\CatSounds\MeowContainer\meow2		124552
-	653328147	meow1	C:\Abertay\GGJ\GlobalGameJam2023-3D\GlobalGameJam2023-3D_WwiseProject\.cache\Mac\SFX\meow1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\CatSounds\MeowContainer\meow1		124552
-	697584758	jump_land_purr	C:\Abertay\GGJ\GlobalGameJam2023-3D\GlobalGameJam2023-3D_WwiseProject\.cache\Mac\SFX\jump_land_purr_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jumping\jump_land_purr		226140
-	870132491	menu_button2	C:\Abertay\GGJ\GlobalGameJam2023-3D\GlobalGameJam2023-3D_WwiseProject\.cache\Mac\SFX\menu_button2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\menu_button2		302528
-	913344849	jump_land	C:\Abertay\GGJ\GlobalGameJam2023-3D\GlobalGameJam2023-3D_WwiseProject\.cache\Mac\SFX\jump_land_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jumping\jump_land		226140
-	962828443	jump_up	C:\Abertay\GGJ\GlobalGameJam2023-3D\GlobalGameJam2023-3D_WwiseProject\.cache\Mac\SFX\jump_up_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jumping\jump_up		124552
-	964463698	menu_button_startgame	C:\Abertay\GGJ\GlobalGameJam2023-3D\GlobalGameJam2023-3D_WwiseProject\.cache\Mac\SFX\menu_button_startgame_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\menu_button_startgame		604928
-	1017080012	menu_button1	C:\Abertay\GGJ\GlobalGameJam2023-3D\GlobalGameJam2023-3D_WwiseProject\.cache\Mac\SFX\menu_button1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\menu_button1		302528
-	1039984839	ambient_birds_insects	C:\Abertay\GGJ\GlobalGameJam2023-3D\GlobalGameJam2023-3D_WwiseProject\.cache\Mac\SFX\ambient_birds_insects_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambient\ambient_birds_insects		4559390
+	1015891	ambient_night	C:\Users\Sean_\Desktop\GlobalGameJam2023-3D\GlobalGameJam2023-3D_WwiseProject\.cache\Mac\SFX\ambient_night_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambient\ambient_night		4559390
+	34370976	ambient_calm	C:\Users\Sean_\Desktop\GlobalGameJam2023-3D\GlobalGameJam2023-3D_WwiseProject\.cache\Mac\SFX\ambient_calm_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambient\ambient_calm		4559390
+	102198125	gamejamsong2_battlemusic	C:\Users\Sean_\Desktop\GlobalGameJam2023-3D\GlobalGameJam2023-3D_WwiseProject\.cache\Mac\SFX\gamejamsong2_battlemusic_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\gamejamsong2_battlemusic\gamejamsong2_battlemusic		25643648
+	120477436	ambient_windy	C:\Users\Sean_\Desktop\GlobalGameJam2023-3D\GlobalGameJam2023-3D_WwiseProject\.cache\Mac\SFX\ambient_windy_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambient\ambient_windy		4559390
+	134254866	gamejamsong1	C:\Users\Sean_\Desktop\GlobalGameJam2023-3D\GlobalGameJam2023-3D_WwiseProject\.cache\Mac\SFX\gamejamsong1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\gamejamsong1\gamejamsong1		33868928
+	291559207	purr_loopable	C:\Users\Sean_\Desktop\GlobalGameJam2023-3D\GlobalGameJam2023-3D_WwiseProject\.cache\Mac\SFX\purr_loopable_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\CatSounds\purr_loopable		219052
+	413065541	footstep	C:\Users\Sean_\Desktop\GlobalGameJam2023-3D\GlobalGameJam2023-3D_WwiseProject\.cache\Mac\SFX\footstep_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\footstep		66824
+	563728923	digging_reverb	C:\Users\Sean_\Desktop\GlobalGameJam2023-3D\GlobalGameJam2023-3D_WwiseProject\.cache\Mac\SFX\digging_reverb_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Digging\digging_reverb		302528
+	646617067	digging	C:\Users\Sean_\Desktop\GlobalGameJam2023-3D\GlobalGameJam2023-3D_WwiseProject\.cache\Mac\SFX\digging_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Digging\digging		197004
+	648578355	meow2	C:\Users\Sean_\Desktop\GlobalGameJam2023-3D\GlobalGameJam2023-3D_WwiseProject\.cache\Mac\SFX\meow2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\CatSounds\MeowContainer\meow2		124552
+	653328147	meow1	C:\Users\Sean_\Desktop\GlobalGameJam2023-3D\GlobalGameJam2023-3D_WwiseProject\.cache\Mac\SFX\meow1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\CatSounds\MeowContainer\meow1		124552
+	697584758	jump_land_purr	C:\Users\Sean_\Desktop\GlobalGameJam2023-3D\GlobalGameJam2023-3D_WwiseProject\.cache\Mac\SFX\jump_land_purr_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jumping\jump_land_purr		226140
+	870132491	menu_button2	C:\Users\Sean_\Desktop\GlobalGameJam2023-3D\GlobalGameJam2023-3D_WwiseProject\.cache\Mac\SFX\menu_button2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\menu_button2		302528
+	913344849	jump_land	C:\Users\Sean_\Desktop\GlobalGameJam2023-3D\GlobalGameJam2023-3D_WwiseProject\.cache\Mac\SFX\jump_land_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jumping\jump_land		226140
+	962828443	jump_up	C:\Users\Sean_\Desktop\GlobalGameJam2023-3D\GlobalGameJam2023-3D_WwiseProject\.cache\Mac\SFX\jump_up_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jumping\jump_up		124552
+	964463698	menu_button_startgame	C:\Users\Sean_\Desktop\GlobalGameJam2023-3D\GlobalGameJam2023-3D_WwiseProject\.cache\Mac\SFX\menu_button_startgame_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\menu_button_startgame		604928
+	1017080012	menu_button1	C:\Users\Sean_\Desktop\GlobalGameJam2023-3D\GlobalGameJam2023-3D_WwiseProject\.cache\Mac\SFX\menu_button1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\menu_button1		302528
+	1039984839	ambient_birds_insects	C:\Users\Sean_\Desktop\GlobalGameJam2023-3D\GlobalGameJam2023-3D_WwiseProject\.cache\Mac\SFX\ambient_birds_insects_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambient\ambient_birds_insects		4559390
 

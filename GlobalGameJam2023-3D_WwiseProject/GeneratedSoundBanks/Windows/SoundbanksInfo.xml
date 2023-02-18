@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
 	<RootPaths>
-		<ProjectRoot>C:\Abertay\GGJ\GlobalGameJam2023-3D\GlobalGameJam2023-3D_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>C:\Abertay\GGJ\GlobalGameJam2023-3D\GlobalGameJam2023-3D_WwiseProject\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Abertay\GGJ\GlobalGameJam2023-3D\GlobalGameJam2023-3D_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\Sean_\Desktop\GlobalGameJam2023-3D\GlobalGameJam2023-3D_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Sean_\Desktop\GlobalGameJam2023-3D\GlobalGameJam2023-3D_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Sean_\Desktop\GlobalGameJam2023-3D\GlobalGameJam2023-3D_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Abertay\GGJ\GlobalGameJam2023-3D\GlobalGameJam2023-3D_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\Sean_\Desktop\GlobalGameJam2023-3D\GlobalGameJam2023-3D_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="1661994096" Language="SFX" Hash="64582093">
+		<SoundBank Id="1661994096" Language="SFX" Hash="694915620">
 			<ObjectPath>\SoundBanks\Default Work Unit\SoundBank</ObjectPath>
 			<ShortName>SoundBank</ShortName>
 			<Path>SoundBank.bnk</Path>
